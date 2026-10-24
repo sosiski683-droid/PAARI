@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>PAARI — платформа для профессионалов и клиентов</title>
+<title>ПААРИ — платформа для профессионалов и клиентов</title>
 <style>
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--soft:#f1f6ff;--tx:#0f1b33;--mu:#5b6b88;--ac:#2563eb;--ac2:#dbe8ff;--bd:#e1e8f5}
 html{scroll-behavior:smooth}*{box-sizing:border-box}
@@ -124,34 +124,51 @@ footer{border-top-color:#7c3aed}
 #dots{position:fixed;right:14px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:3;opacity:1;transition:opacity .3s}#dots i{width:8px;height:8px;border-radius:50%;background:#2563eb33;transition:all .3s}#dots i.on{background:var(--ac);height:22px;border-radius:99px}
 @media(max-width:760px){.s3{padding-top:50vh!important;padding-bottom:4vh!important}.s3.hero h1{font-size:27px}.s3.hero .lead,.pn .lead{font-size:15px;margin-bottom:10px}.pn h2{font-size:22px}.badge{margin-bottom:8px}.pp{font-size:12.5px;padding:7px 11px;margin-top:10px}#dots{right:6px}.s3.hero .row .btn{padding:12px 18px;font-size:14px}}
 .s3.hero .pn{position:relative}.s3.hero .row{flex-wrap:wrap}
-</style></head><body><div id="pg" style="position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#2563eb,#7c3aed,#ec4899);z-index:60"></div>
+.s3:not(.hero){min-height:calc(72svh - 63px)}.cg b,.calc b{background:linear-gradient(90deg,#2563eb,#7c3aed,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}.eb{background:linear-gradient(90deg,#2563eb,#7c3aed);-webkit-background-clip:text;background-clip:text;color:transparent}.card b.gt{font-weight:800}.subs h3{margin:26px 0 4px;font-size:18px}.chp.on{background:linear-gradient(135deg,#2563eb,#6d4aff);color:#fff;border-color:transparent;box-shadow:0 8px 22px #2563eb40}
+.lv{cursor:pointer;border:2px solid transparent;border-top-width:4px}.lv.on{border-color:#7c3aed;box-shadow:0 14px 34px #7c3aed30}.lv .rg{font-weight:800;font-size:20px;margin:8px 0}.lv ul{margin:8px 0 0;padding-left:18px;color:var(--mu);font-size:14px}.lv li{margin:3px 0}
+.scalc{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:space-between;margin-top:22px}.ssum{font-weight:700;font-size:17px;margin-top:2px}.stot b{display:block;font-size:30px;background:linear-gradient(90deg,#2563eb,#7c3aed,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}.scalc small{color:var(--mu);font-size:12px}
+.loginb{background:linear-gradient(135deg,#2563eb,#6d4aff);color:#fff;padding:7px 16px;border-radius:999px;box-shadow:0 6px 16px #2563eb40}.chp.on b.gt{background:none;-webkit-text-fill-color:#fff;color:#fff}.pcs{align-self:stretch;display:flex;flex-direction:column;gap:8px}.pcard{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:10px 12px;box-shadow:0 2px 8px #2563eb0f}.pcard p{margin:8px 0 0;font-size:13.5px;color:var(--mu)}.pcard .av{width:40px;height:40px;flex:0 0 40px}.pcard .btn.s{padding:6px 12px;font-size:13px}</style></head><body><div id="pg" style="position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#2563eb,#7c3aed,#ec4899);z-index:60"></div>
 <svg width="0" height="0" style="position:absolute"><symbol id="pc" viewBox="0 0 400 300"><rect x="40" y="30" width="320" height="195" rx="14" fill="#fff" stroke="#2563eb" stroke-width="5"/><rect x="60" y="50" width="280" height="30" rx="15" fill="#dbe8ff"/><circle cx="80" cy="65" r="8" fill="#2563eb"/><rect x="98" y="60" width="130" height="10" rx="5" fill="#93b4f5"/><rect x="60" y="95" width="130" height="55" rx="10" fill="#f1f6ff"/><circle cx="82" cy="115" r="12" fill="#2563eb"/><rect x="100" y="108" width="75" height="8" rx="4" fill="#93b4f5"/><rect x="205" y="95" width="135" height="55" rx="10" fill="#f1f6ff"/><circle cx="227" cy="115" r="12" fill="#60a5fa"/><rect x="245" y="108" width="75" height="8" rx="4" fill="#93b4f5"/><rect x="60" y="162" width="280" height="45" rx="10" fill="#f1f6ff"/><rect x="75" y="178" width="160" height="10" rx="5" fill="#93b4f5"/><rect x="262" y="172" width="64" height="26" rx="8" fill="#2563eb"/><path d="M150 225h100l20 40H130z" fill="#dbe8ff"/><rect x="100" y="265" width="200" height="12" rx="6" fill="#2563eb"/></symbol></svg>
-<header><div class="w"><div class="logo" onclick="go('home')">PAARI</div><nav><a class="h" onclick="go('cat');rc2()">Каталог</a><a class="h" onclick="go('faq')">Вопросы</a><a class="h" onclick="go('support')">Поддержка</a><a id="acc" onclick="enter()"><b>Войти</b></a></nav></div></header>
+<header><div class="w"><div class="logo" onclick="go('home')">ПААРИ</div><nav><a class="h" onclick="go('cat');rc2()">Каталог</a><a class="h" onclick="go('sub')">Подписка</a><a class="h" onclick="go('faq')">Вопросы</a><a class="h" onclick="go('support')">Поддержка</a><a id="acc" onclick="enter()"><b>Войти</b></a></nav></div></header>
 <main>
 <div id="home" class="view on">
 <canvas id="gl"></canvas><div id="dots"><i class="on"></i><i></i><i></i><i></i></div>
 <div id="scene">
-<section class="s3 hero"><div class="w"><div class="pn"><div class="badge">✨ Для предпринимателей и самозанятых</div><h1>Покажите работы — <span class="gt">получите клиентов</span> и оплату</h1><p class="lead">PAARI — витрина для мастеров: клиент видит ваши работы и платит безопасно.</p><div class="row"><button class="btn" onclick="enter('pro')">Создать профиль</button><button class="btn o" onclick="go('cat');rc2()">Смотреть работы</button></div><div class="pp">🔒 Деньги хранятся у платформы, пока клиент не подтвердит результат.</div></div></div></section>
-<section class="s3"><div class="w"><div class="pn"><div class="eb">Как это работает · шаг 1</div><h2>Вы создаёте профиль</h2><p class="lead">Загружаете фото и видео своих работ и пишете, что делаете и за сколько.</p></div></div></section>
-<section class="s3"><div class="w"><div class="pn r"><div class="eb">Как это работает · шаг 2</div><h2>Клиент находит и платит</h2><p class="lead">Клиент листает ленту, пишет вам в чат и оплачивает заказ. Деньги ждут у платформы.</p></div></div></section>
-<section class="s3"><div class="w"><div class="pn"><div class="eb">Как это работает · шаг 3</div><h2>Вы делаете заказ и получаете деньги</h2><p class="lead">Клиент подтверждает результат, и деньги переходят вам за вычетом комиссии.</p></div></div></section>
+<section class="s3 hero"><div class="w"><div class="pn"><div class="badge">✨ Для предпринимателей и самозанятых</div><h1>Покажите работы — <span class="gt">получите клиентов</span> и оплату</h1><p class="lead">ПААРИ — витрина для мастеров: клиент видит ваши работы и платит безопасно.</p><div class="row"><button class="btn" onclick="enter('pro')">Создать профиль</button><button class="btn o" onclick="go('cat');rc2()">Смотреть работы</button></div><div class="pp">🔒 Деньги хранятся у платформы, пока клиент не подтвердит результат.</div></div></div></section>
+<section class="s3"><div class="w"><div class="pn"><div class="eb">Как это работает · шаг 1</div><h2>Вы создаёте <span class="gt">профиль</span></h2><p class="lead">Загружаете фото и видео своих работ и пишете, что делаете и за сколько.</p></div></div></section>
+<section class="s3"><div class="w"><div class="pn r"><div class="eb">Как это работает · шаг 2</div><h2>Клиент <span class="gt">находит и платит</span></h2><p class="lead">Клиент листает ленту, пишет вам в чат и оплачивает заказ. Деньги ждут у платформы.</p></div></div></section>
+<section class="s3"><div class="w"><div class="pn"><div class="eb">Как это работает · шаг 3</div><h2>Вы делаете заказ и <span class="gt">получаете деньги</span></h2><p class="lead">Клиент подтверждает результат, и деньги переходят вам за вычетом комиссии.</p></div></div></section>
 </div>
-<section class="op"><div class="w"><h2>Для предпринимателей и самозанятых</h2><p class="lead">PAARI — платформа, где ваша работа говорит за вас. Показывайте портфолио, находите клиентов и принимайте оплату, не покидая приложения: от первого сообщения до денег на счёте всё в одном месте.</p></div></section>
-<section class="op"><div class="w"><div class="eb">ИИ-помощник</div><h2>Спросите что угодно</h2><p class="lead">Подберёт специалиста, объяснит сделку, ответит на вопросы.</p><div class="chr"><button class="chp" onclick="aq('Подбери фотографа в Москве')">📸 Подбери фотографа</button><button class="chp" onclick="aq('Как работает безопасная сделка?')">🛡️ Как работает сделка</button><button class="chp" onclick="aq('Какие налоги платит самозанятый?')">🧾 Про налоги</button></div></div></section>
-<section class="op dirs"><div class="w"><div class="eb">Для клиентов</div><h2>Кого вы ищете?</h2><div class="chr" id="dirs"></div></div></section>
-<section class="soft op"><div class="w"><h2>Сколько стоит</h2><div class="grid">
+<section class="op"><div class="w"><h2>Для <span class="gt">предпринимателей и самозанятых</span></h2><p class="lead">ПААРИ — платформа, где ваша работа говорит за вас. Показывайте портфолио, находите клиентов и принимайте оплату, не покидая приложения: от первого сообщения до денег на счёте всё в одном месте.</p></div></section>
+<section class="op"><div class="w"><div class="eb">ИИ-помощник</div><h2>Спросите <span class="gt">что угодно</span></h2><p class="lead">Подберёт специалиста, объяснит сделку, ответит на вопросы.</p><div class="chr"><button class="chp" onclick="aq('Подбери фотографа в Москве')">📸 Подбери фотографа</button><button class="chp" onclick="aq('Как работает безопасная сделка?')">🛡️ Как работает сделка</button><button class="chp" onclick="aq('Какие налоги платит самозанятый?')">🧾 Про налоги</button></div></div></section>
+<section class="op dirs"><div class="w"><div class="eb">Для клиентов</div><h2>Кого вы <span class="gt">ищете</span>?</h2><div class="chr" id="dirs"></div></div></section>
+<section class="soft op"><div class="w"><h2>Сколько <span class="gt">стоит</span></h2><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))">
 <div class="card"><h3>Кто платит</h3><p>Специалист. Клиент не платит ничего сверх цены заказа.</p></div>
 <div class="card"><h3>За что</h3><p>За выполненный заказ: приём оплаты, безопасная сделка и защита от неоплаты.</p></div>
-<div class="card"><h3>Сколько и как часто</h3><p>10% с каждого завершённого заказа, 5% с повторного заказа того же клиента. Подписки нет.</p></div></div><div class="card calc"><h3>Сколько вы получите</h3><label>Сумма заказа, ₽</label><input id="cs" type="text" inputmode="numeric" value="10000" oninput="calcP()"><div class="cg"><div><small>Первый заказ · комиссия 10%</small><b id="c1"></b></div><div><small>Повторный заказ · комиссия 5%</small><b id="c2"></b></div></div><p class="tag" style="margin:10px 0 0">Без учёта налога, который самозанятый или ИП платит сам.</p></div></div></section>
-<section class="op"><div class="w" style="text-align:center"><h2>Начните с бесплатного профиля</h2><p class="lead">Регистрация занимает пару минут: нужны имя, почта и ИНН.</p><div class="row" style="justify-content:center"><button class="btn" onclick="enter('pro')">Создать профиль</button><button class="btn o" onclick="go('cat');rc2()">Смотреть работы</button></div></div></section>
+<div class="card"><h3>Сколько и как часто</h3><p>Комиссия — <b class="gt">5%</b> с каждого завершённого заказа.</p></div><div class="card"><h3>Подписка (продвижение)</h3><p>Необязательная подписка на продвижение профиля: стоимость <b class="gt">от 300 ₽</b> в зависимости от качества услуг продвижения.</p><div class="row" style="margin-top:12px"><button class="btn s" onclick="go('sub')">Выбрать подписку</button></div></div></div><div class="card calc"><h3>Сколько вы получите</h3><label>Сумма заказа, ₽</label><input id="cs" type="text" inputmode="numeric" value="10000" oninput="calcP()"><div class="cg"><div><small>Комиссия платформы · 5%</small><b id="c1"></b></div><div><small>Вы получите</small><b id="c2"></b></div></div><p class="tag" style="margin:10px 0 0">Без учёта налога, который самозанятый или ИП платит сам.</p></div></div></section>
+<section class="op"><div class="w" style="text-align:center"><h2>Начните с <span class="gt">бесплатного профиля</span></h2><p class="lead">Регистрация занимает пару минут: нужны имя, почта и ИНН.</p><div class="row" style="justify-content:center"><button class="btn" onclick="enter('pro')">Создать профиль</button><button class="btn o" onclick="go('cat');rc2()">Смотреть работы</button></div></div></section>
 <div id="dm" style="display:none"></div><div id="dc" style="display:none"></div>
 </div>
 
-<div id="auth" class="view"><section><div class="w"><div class="card box"><h2>Регистрация</h2><p class="tag">Один аккаунт для всего: вы будете клиентом, а специалистом можно стать позже в личном кабинете.</p>
-<label>Имя</label><input id="rn"><label>Email</label><input id="re" type="email"><label>Пароль</label><input id="rp" type="password">
-<div class="row"><button class="btn" onclick="reg()">Зарегистрироваться</button></div></div></div></section></div>
+<div id="sub" class="view"><section><div class="w" style="max-width:920px"><div class="eb">Продвижение</div><h2>Подписка на <span class="gt">продвижение профиля</span></h2><p class="lead">Необязательная подписка поднимает ваш профиль в ленте специалистов. Чем выше уровень, тем лучше продвижение. Цена — от 300 до 1000 ₽ в месяц. При оплате на 6 месяцев скидка <b class="gt">5%</b>, на 12 месяцев — <b class="gt">10%</b>.</p>
+<div class="subs"><h3>1. Выберите срок</h3><div class="chr" id="sdur"></div>
+<h3>2. Выберите уровень и стоимость в месяц</h3><div class="grid" id="slv"></div>
+<div class="chr" id="sprice"></div>
+<div class="card scalc"><div><small>Ваш выбор</small><div id="ssum" class="ssum"></div></div><div class="stot"><small>Итого к оплате</small><b id="stot"></b></div><button class="btn" onclick="subBuy()">Оформить подписку</button></div>
+<p class="tag" id="sact" style="margin-top:10px"></p><p class="tag">Сейчас сайт — демо-прототип: оплата подписки имитируется.</p></div></div></section></div>
 
-<div id="me" class="view"><section><div class="w"><h2 style="margin-bottom:16px">Личный кабинет</h2>
+<div id="auth" class="view"><section><div class="w"><div class="card box">
+<div class="chr" id="tabs" style="margin:0 0 14px"><button class="chp on" id="tabL" onclick="authTab('l')">Вход</button><button class="chp" id="tabR" onclick="authTab('r')">Регистрация</button></div>
+<p class="tag" id="aWel" style="display:none;margin-bottom:10px"></p>
+<div id="aL"><h2><span class="gt">Вход</span></h2><p class="tag">Введите email и пароль, указанные при регистрации.</p>
+<label>Email</label><input id="le" type="email" autocomplete="email"><label>Пароль</label><input id="lp" type="password" autocomplete="current-password" onkeydown="if(event.key==='Enter')login()">
+<div class="row"><button class="btn" onclick="login()">Войти</button></div></div>
+<div id="aR" style="display:none"><h2><span class="gt">Регистрация</span></h2><p class="tag">Один аккаунт для всего: вы будете клиентом, а специалистом можно стать позже в личном кабинете.</p>
+<label>Имя</label><input id="rn" autocomplete="name"><label>Email</label><input id="re" type="email" autocomplete="email"><label>Пароль (от 6 символов)</label><input id="rp" type="password" autocomplete="new-password">
+<div class="row"><button class="btn" onclick="reg()">Зарегистрироваться</button></div></div>
+</div></div></section></div>
+
+<div id="me" class="view"><section><div class="w"><h2 style="margin-bottom:16px"><span class="gt">Личный кабинет</span></h2>
 <div class="card" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><div class="av big" id="mav"></div><div style="flex:1;min-width:180px"><h3 id="mh" style="font-size:22px"></h3><div class="tag" id="mem"></div><div style="margin-top:8px" id="mr"></div></div><button class="btn o s" onclick="logout()">Выйти</button></div>
 <div class="grid">
 <div class="card"><div class="ic">🔎</div><h3>Я ищу специалиста</h3><p>Опишите задачу и получите отклики.</p><div class="row"><button class="btn s" onclick="go('cl')">Опишите задачу</button></div></div>
@@ -159,7 +176,7 @@ footer{border-top-color:#7c3aed}
 <div class="card" id="ib" style="display:none"><div class="ic">📥</div><h3>Заявки для вас</h3><p>Клиенты, которым нужна ваша помощь.</p><div class="row"><button class="btn s" onclick="go('inbox')">Открыть</button></div></div>
 <div class="card"><div class="ic">💬</div><h3>Мои чаты</h3><div id="chl"></div></div></div></div></section></div>
 
-<div id="pro" class="view"><section><div class="w"><div class="card box"><h2>Ваш профиль</h2><div style="display:flex;gap:14px;align-items:center;margin-bottom:6px"><div class="av big dflt" id="avp">?</div><div style="flex:1"><label style="margin-top:0">Аватарка или ваше фото</label><input type="file" accept="image/*" onchange="readAv(this.files[0])"></div></div><label>Никнейм</label><input id="pnick" placeholder="например, nastya.frames">
+<div id="pro" class="view"><section><div class="w"><div class="card box"><h2>Ваш <span class="gt">профиль</span></h2><div style="display:flex;gap:14px;align-items:center;margin-bottom:6px"><div class="av big dflt" id="avp">?</div><div style="flex:1"><label style="margin-top:0">Аватарка или ваше фото</label><input type="file" accept="image/*" onchange="readAv(this.files[0])"></div></div><label>Никнейм</label><input id="pnick" placeholder="например, nastya.frames">
 <label>ФИО</label><input id="pn"><label>Мои услуги: что вы продаёте или производите</label><textarea id="pc" placeholder="Впишите свой список через запятую, например: торты на заказ, капкейки, пряники"></textarea><label>Город</label><input id="pcity" list="cities">
 <label>Образование</label><input id="pe" placeholder="Вуз, специальность, курсы, сертификаты">
 <label>Опыт и выполненные работы</label><textarea id="px"></textarea><label>Описание профиля: о себе и услугах</label><textarea id="pd"></textarea>
@@ -172,7 +189,7 @@ footer{border-top-color:#7c3aed}
 <p class="tag">Сканы паспорта и документов мы не запрашиваем и не храним.</p>
 <div class="row"><button class="btn" onclick="saveP()">Опубликовать профиль</button></div></div></div></section></div>
 
-<div id="cl" class="view"><section><div class="w two" style="align-items:start"><div class="card"><h2>Опишите задачу</h2>
+<div id="cl" class="view"><section><div class="w two" style="align-items:start"><div class="card"><h2>Опишите <span class="gt">задачу</span></h2>
 <label>Что нужно сделать?</label><textarea id="rq" placeholder="Например: нужен лендинг для кофейни до конца месяца"></textarea>
 <div class="f2"><div><label>Область</label><select id="rc"></select></div><div><label>Бюджет, ₽</label><input id="rb" type="number" min="0" placeholder="30000"></div></div>
 <label>Город (Россия)</label><input id="rcity" list="cities" placeholder="Москва, Казань…">
@@ -181,9 +198,9 @@ footer{border-top-color:#7c3aed}
 
 <div id="prof" class="view"><section><div class="w"><div class="card box" id="pv"></div></div></section></div>
 <div id="cv" class="view"><section><div class="w"><div class="card box"><h2 id="ct"></h2><div id="ostat" class="tag" style="margin-bottom:8px"></div><div id="cmsg"></div><div class="row" id="obar" style="align-items:center"></div><form class="cf" onsubmit="return false"><input id="cin" placeholder="Напишите сообщение…" autocomplete="off"><button type="button" onclick="sendM()">➤</button></form></div></div></section></div>
-<div id="inbox" class="view"><section><div class="w"><div class="box"><h2>Заявки для вас</h2><div id="il"><p class="tag">Пока заявок нет. Как только клиент опубликует подходящую задачу, она появится здесь.</p></div></div></div></section></div>
+<div id="inbox" class="view"><section><div class="w"><div class="box"><h2>Заявки <span class="gt">для вас</span></h2><div id="il"><p class="tag">Пока заявок нет. Как только клиент опубликует подходящую задачу, она появится здесь.</p></div></div></div></section></div>
 
-<div id="faq" class="view"><section><div class="w"><h2>Частые вопросы</h2>
+<div id="faq" class="view"><section><div class="w"><h2>Частые <span class="gt">вопросы</span></h2>
 <details><summary>Как работает платформа?</summary><p>Клиент регистрируется и описывает задачу, бюджет и город. Подходящие специалисты присылают отклики, клиент смотрит профили и отзывы, общается в чате и выбирает исполнителя. Специалист заполняет анкету и появляется в каталоге.</p></details>
 <details><summary>Сколько это стоит?</summary><p>Регистрация, размещение заявки и публикация профиля бесплатны. Стоимость услуг устанавливает специалист, она указана в профиле в рублях.</p></details>
 <details><summary>Можно ли быть и клиентом, и специалистом?</summary><p>Да. Регистрация одна, а анкету специалиста можно заполнить в личном кабинете.</p></details>
@@ -195,7 +212,7 @@ footer{border-top-color:#7c3aed}
 <details><summary>Что если клиент недоволен?</summary><p>Пока клиент не подтвердил получение, он может открыть спор: деньги замораживаются, и поддержка разбирает ситуацию. Отзыв можно оставить только после сделки через платформу.</p></details><details><summary>Почему нельзя обмениваться телефонами в чате?</summary><p>Пока заказ идёт через платформу, вы защищены гарантией возврата. Поэтому контакты в чате скрываются. За повторные заказы у того же специалиста комиссия снижается, а клиент получает бонусы.</p></details><details><summary>Безопасно ли это?</summary><p>Договаривайтесь об условиях заранее и не передавайте данные карты третьим лицам. При проблемах пишите в поддержку.</p></details>
 <div class="card" style="margin-top:22px;text-align:center"><h3>Не нашли свой вопрос?</h3><p>Спросите ИИ-помощника, он ответит сразу.</p><div class="row" style="justify-content:center"><button class="btn" onclick="oai()">✨ Спросить ИИ</button></div></div></div></section></div>
 
-<div id="support" class="view"><section><div class="w"><h2>Техническая поддержка</h2><p class="lead">Поможем, если не пришли деньги, вас обманули или что-то не работает.</p><div class="chr"><button class="chp" onclick="aq('Не пришла оплата, что делать?')">💸 Не пришла оплата</button><button class="chp" onclick="aq('Меня обманули, что делать?')">⚠️ Меня обманули</button><button class="chp" onclick="aq('Как открыть спор по заказу?')">⚖️ Открыть спор</button></div><p class="tag" style="margin-top:12px">Не нашли ответ? Спросите <span class="lk" onclick="oai()">ИИ-помощника</span> или отправьте сообщение ниже.</p>
+<div id="support" class="view"><section><div class="w"><h2>Техническая <span class="gt">поддержка</span></h2><p class="lead">Поможем, если не пришли деньги, вас обманули или что-то не работает.</p><div class="chr"><button class="chp" onclick="aq('Не пришла оплата, что делать?')">💸 Не пришла оплата</button><button class="chp" onclick="aq('Меня обманули, что делать?')">⚠️ Меня обманули</button><button class="chp" onclick="aq('Как открыть спор по заказу?')">⚖️ Открыть спор</button></div><p class="tag" style="margin-top:12px">Не нашли ответ? Спросите <span class="lk" onclick="oai()">ИИ-помощника</span> или отправьте сообщение ниже.</p>
 <div class="two" style="align-items:start;margin-top:20px"><div class="card"><h3>Написать в поддержку</h3>
 <label>Тема</label><select><option>Не пришла оплата</option><option>Меня обманули</option><option>Спор со специалистом или клиентом</option><option>Технический сбой</option><option>Проблема с аккаунтом</option><option>Другое</option></select>
 <label>Email для ответа</label><input id="se" type="email"><label>Опишите ситуацию</label><textarea id="sm"></textarea>
@@ -206,13 +223,13 @@ footer{border-top-color:#7c3aed}
 <details><summary>Не могу войти</summary><p>Проверьте email и пароль, при необходимости обратитесь к нам.</p></details>
 <details><summary>Сколько ждать ответа?</summary><p>Обычно отвечаем в течение рабочего дня.</p></details></div></div></div></section></div>
 
-<div id="legal" class="view"><section><div class="w"><div class="box" style="max-width:760px"><h2>Политика конфиденциальности</h2>
-<p class="lead" style="font-size:16px">Платформа PAARI работает в соответствии с законодательством Российской Федерации, в том числе с Федеральным законом № 152-ФЗ «О персональных данных». Мы собираем только данные, необходимые для работы сервиса: имя, email и информацию, которую пользователь указывает в профиле или заявке. Данные не передаются третьим лицам без законного основания и не используются в целях, не связанных с работой платформы. Пользователь может запросить изменение или удаление своих данных, написав нам.</p>
+<div id="legal" class="view"><section><div class="w"><div class="box" style="max-width:760px"><h2>Политика <span class="gt">конфиденциальности</span></h2>
+<p class="lead" style="font-size:16px">Платформа ПААРИ работает в соответствии с законодательством Российской Федерации, в том числе с Федеральным законом № 152-ФЗ «О персональных данных». Мы собираем только данные, необходимые для работы сервиса: имя, email и информацию, которую пользователь указывает в профиле или заявке. Данные не передаются третьим лицам без законного основания и не используются в целях, не связанных с работой платформы. Пользователь может запросить изменение или удаление своих данных, написав нам.</p>
 <p class="lead" style="font-size:16px">Использование платформы означает согласие с настоящей политикой и правилами сервиса. Деятельность специалистов и заказчиков на платформе осуществляется в рамках действующего законодательства РФ. Платформа не хранит сканы паспортов: ИНН сверяется с данными ФНС, а личность специалиста подтверждает платёжный провайдер перед первой выплатой.</p>
 <h2 style="margin-top:30px">Контакты</h2><p class="lead" style="font-size:16px">Email: support@paari.ru<br>Время работы поддержки: пн–пт, 10:00–19:00 (МСК)</p></div></div></section></div>
-<div id="cat" class="view"><section><div class="w"><h2>Лента специалистов</h2><p class="tag">Листайте работы специалистов. Пример профиля: <span class="lk" onclick="prof(0)">Анастасия Волкова</span></p><div class="fbar"><div id="stories" class="sto"></div><div class="f2"><input id="qs" placeholder="Поиск: логотип, сайт, ремонт…" oninput="rc2()"><select id="qc" onchange="rc2()"></select></div><div class="frow"><select id="qo" onchange="rc2()"><option value="0">Рекомендуем</option><option value="1">По рейтингу</option><option value="2">Сначала дешевле</option><option value="3">Сначала дороже</option></select><label class="vchk"><input type="checkbox" id="qv" onchange="rc2()"> Только проверенные</label><span class="tag" id="qn"></span></div></div><div id="cl2"></div></div></section></div>
-<div id="info" class="view"><section><div class="w" style="max-width:760px"><h2>Информация о PAARI</h2>
-<div id="about"><h3>О компании</h3><p class="lead" style="font-size:16px">PAARI — платформа, которая соединяет клиентов и специалистов по всей России. Мы запускаем платформу и помогаем быстро находить исполнителей для самых разных задач.</p></div>
+<div id="cat" class="view"><section><div class="w"><h2>Лента <span class="gt">специалистов</span></h2><p class="tag">Листайте работы специалистов. Пример профиля: <span class="lk" onclick="prof(0)">Анастасия Волкова</span></p><div class="fbar"><div id="stories" class="sto"></div><div class="f2"><input id="qs" placeholder="Поиск: логотип, сайт, ремонт…" oninput="rc2()"><select id="qc" onchange="rc2()"></select></div><div class="frow"><select id="qo" onchange="rc2()"><option value="0">Рекомендуем</option><option value="1">По рейтингу</option><option value="2">Сначала дешевле</option><option value="3">Сначала дороже</option></select><label class="vchk"><input type="checkbox" id="qv" onchange="rc2()"> Только проверенные</label><span class="tag" id="qn"></span></div></div><div id="cl2"></div></div></section></div>
+<div id="info" class="view"><section><div class="w" style="max-width:760px"><h2>Информация о <span class="gt">ПААРИ</span></h2>
+<div id="about"><h3>О компании</h3><p class="lead" style="font-size:16px">ПААРИ — платформа, которая соединяет клиентов и специалистов по всей России. Мы запускаем платформу и помогаем быстро находить исполнителей для самых разных задач.</p></div>
 <div id="exp"><h3>Эксперты</h3><p class="lead" style="font-size:16px">На платформе специалисты разных направлений: дизайнеры, разработчики, мастера, юристы, репетиторы и другие.</p></div>
 <div id="promo"><h3>Акции и промокоды</h3><p class="lead" style="font-size:16px">Следите за акциями в наших соцсетях. Промокод вводится при оформлении заказа.</p></div>
 <div id="pay"><h3>Оплата заказа</h3><p class="lead" style="font-size:16px">Принимаем банковские карты Visa и Мир, а также оплату через СБП.</p></div>
@@ -225,18 +242,18 @@ footer{border-top-color:#7c3aed}
 <div><b style="color:var(--tx)">Информация</b><br><a onclick="inf('promo')">Акции и промокоды</a><br><a onclick="inf('pay')">Оплата заказа</a><br><a onclick="inf('inst')">Оплата в рассрочку</a><br><a onclick="inf('safe')">Безопасная сделка</a></div>
 <div><b style="color:var(--tx)">Компания</b><br><a onclick="inf('about')">О компании</a><br><a onclick="inf('exp')">Эксперты</a><br><a onclick="inf('jobs')">Вакансии</a><br><a onclick="inf('contacts')">Контакты</a></div>
 <div><b style="color:var(--tx)">Принимаем к оплате</b><br><span class="pill">Банковские карты</span><span class="pill">Visa</span><span class="pill">Мир</span><span class="pill">СБП</span></div></div>
-© PAARI · <a onclick="go('legal')">Политика конфиденциальности</a> · <a onclick="go('legal')">Контакты</a></div></footer>
+© ПААРИ · <a onclick="go('legal')">Политика конфиденциальности</a> · <a onclick="go('legal')">Контакты</a></div></footer>
 <div class="ov" id="pm" style="display:none"><div class="card box" style="max-width:380px"><h3>Оплата заказа</h3><p class="lead" id="pa" style="font-size:16px"></p><div class="row" style="margin-top:6px"><button class="btn s" onclick="pmeth(0)">Банковская карта</button><button class="btn o s" onclick="pmeth(1)">СБП</button></div>
 <div id="cf2"><label>Номер карты</label><input placeholder="2200 0000 0000 0000"><div class="f2"><div><label>Срок</label><input placeholder="12/28"></div><div><label>CVC</label><input placeholder="123"></div></div></div><p class="tag" id="sbp" style="display:none">Откроется приложение вашего банка для подтверждения платежа.</p>
 <div class="row"><button class="btn" onclick="payDo()">Оплатить</button><button class="btn o" onclick="$('pm').style.display='none'">Отмена</button></div><p class="tag">Демо-оплата: реальные деньги не списываются.</p></div></div>
 <datalist id="cities"></datalist>
-<div id="ai"><div id="chat"><div class="ch">✨ ИИ-помощник PAARI <span onclick="tg()">✕</span></div><div id="msgs"></div><div id="ach"><button onclick="ask('Подбери специалиста для моей задачи')">🔎 Подобрать специалиста</button><button onclick="ask('Как работает безопасная сделка?')">🛡️ Безопасная сделка</button><button onclick="ask('Сколько стоит пользоваться PAARI?')">💰 Сколько стоит</button><button onclick="ask('Как стать специалистом на PAARI?')">🚀 Стать специалистом</button></div>
+<div id="ai"><div id="chat"><div class="ch">✨ ИИ-помощник ПААРИ <span onclick="tg()">✕</span></div><div id="msgs"></div><div id="ach"><button onclick="ask('Подбери специалиста для моей задачи')">🔎 Подобрать специалиста</button><button onclick="ask('Как работает безопасная сделка?')">🛡️ Безопасная сделка</button><button onclick="ask('Сколько стоит пользоваться ПААРИ?')">💰 Сколько стоит</button><button onclick="ask('Как стать специалистом на ПААРИ?')">🚀 Стать специалистом</button></div>
 <form class="cf" onsubmit="return false"><input id="ci" placeholder="Что вам нужно?" autocomplete="off"><button type="button" onclick="ask()">➤</button></form></div><button id="fab" aria-label="ИИ-помощник" onclick="tg()">✨</button></div>
 
 <script>
 var $=function(i){return document.getElementById(i)};
-var CATS=["Дизайн и брендинг","Веб-разработка","Ремонт и строительство","Маркетинг и SMM","Тексты и переводы","Фото и видео","Юристы и бухгалтерия","Репетиторы и обучение"];
-var KW=["дизайн логотип бренд баннер","сайт лендинг разработ программ бот","ремонт строит плитк электрик отделк","реклам маркетинг smm соцсет таргет","текст перевод статья копирайт","фото видео съёмк монтаж","юрист договор бухгалт налог","репетитор урок обучен экзамен"];
+var CATS=["Дизайн и брендинг","Веб-разработка","Ремонт и строительство","Маркетинг и SMM","Тексты и переводы","Фото и видео","Юристы и бухгалтерия","Репетиторы и обучение","Кулинария и кондитерка"];
+var KW=["дизайн логотип бренд баннер","сайт лендинг разработ программ бот","ремонт строит плитк электрик отделк","реклам маркетинг smm соцсет таргет","текст перевод статья копирайт","фото видео съёмк монтаж","юрист договор бухгалт налог","репетитор урок обучен экзамен","кондитер торт десерт выпечк повар шеф кулинар банкет кейтеринг"];
 $("cities").innerHTML="Москва,Санкт-Петербург,Новосибирск,Екатеринбург,Казань,Нижний Новгород,Челябинск,Самара,Омск,Ростов-на-Дону,Уфа,Красноярск,Воронеж,Пермь,Волгоград,Краснодар,Тюмень,Калининград,Иркутск,Хабаровск,Владивосток,Удалённо".split(",").map(function(c){return"<option value='"+c+"'>"}).join("");
 var opts=CATS.map(function(c,i){return"<option value='"+i+"'>"+c+"</option>"}).join("");$("rc").innerHTML="<option value=''>Определить автоматически</option>"+opts;
 var PROS=[["Алина Кузнецова",0,8000,"Москва",4.9,"МГХПА, дизайн","Логотипы и фирменный стиль, 60+ проектов."],
@@ -250,13 +267,28 @@ var PROS=[["Алина Кузнецова",0,8000,"Москва",4.9,"МГХПА
 ["Денис Демидов",1,18000,"Москва",4.9,"ВШЭ, программная инженерия","Веб-приложения, интернет-магазины, доработка сайтов."],
 ["Юлия Орлова",0,6000,"Краснодар",4.8,"КубГУ, графический дизайн","Баннеры, упаковка, презентации."],
 ["Павел Серов",2,12000,"Москва",4.6,"МГСУ","Отделка, ремонт ванных, электрика."],
-["Наталья Белова",3,15000,"Удалённо",4.7,"РЭУ им. Плеханова","Контекстная реклама, продвижение в соцсетях."]].map(function(a){return{n:a[0],c:a[1],p:a[2],city:a[3],r:a[4],e:a[5],d:a[6]}});
+["Наталья Белова",3,15000,"Удалённо",4.7,"РЭУ им. Плеханова","Контекстная реклама, продвижение в соцсетях."],
+["Мария Кондратьева",8,3500,"Москва",4.9,"Колледж кондитерского искусства","Кондитер. Торты на заказ, бенто-торты, капкейки и макарон."],
+["Андрей Громов",8,4500,"Санкт-Петербург",4.8,"Школа кондитеров, Санкт-Петербург","Кондитер. Свадебные торты, десерты, эклеры и чизкейки."],
+["Екатерина Лисина",8,1500,"Екатеринбург",4.8,"Кулинарный колледж","Кондитер. Имбирные пряники, шоколад ручной работы, подарочные наборы."],
+["Сергей Ковалёв",8,9000,"Москва",4.8,"Шеф-повар, 12 лет в ресторанах","Повар. Шеф на дом и на мероприятия, банкеты, фуршеты и кейтеринг."],
+["Ирина Фёдорова",8,5000,"Казань",4.7,"Кулинарная академия","Повар. Домашняя кухня, готовка на неделю, обеды для офиса."],
+["Тимур Рахимов",8,7000,"Краснодар",4.9,"Повар-универсал, грузинская и узбекская кухня","Повар. Выездной повар: шашлык, плов, грузинская кухня на праздник."],
+["Ольга Ярцева",8,2000,"Удалённо",4.8,"Автор кулинарного блога","Кондитер и повар. Онлайн-мастер-классы по выпечке и домашним десертам."]].map(function(a){return{n:a[0],c:a[1],p:a[2],city:a[3],r:a[4],e:a[5],d:a[6]}});
 try{PROS=PROS.concat(JSON.parse(localStorage.getItem("pp")||"[]"))}catch(e){}
 var REV=[["Марина","Сделано быстро и аккуратно, рекомендую.",5],["Сергей","Всё по договорённости, всегда на связи.",5],["Ирина","Хорошая работа, небольшая задержка по срокам.",4],["Виктор","Приятно работать, результат устроил полностью.",5]];
 var U=null,CH={},CUR=null,INB=[];try{U=JSON.parse(localStorage.getItem("pu")||"null")}catch(e){}
 function esc(t){var d=document.createElement("div");d.textContent=t==null?"":t;return d.innerHTML}
 function guess(t){t=t.toLowerCase();var b=-1,s=0;KW.forEach(function(k,i){var n=0;k.split(" ").forEach(function(w){if(t.indexOf(w)>-1)n++});if(n>s){s=n;b=i}});return b}
-function go(v){document.querySelectorAll(".view").forEach(function(e){e.classList.remove("on")});$(v).classList.add("on");$("ft").style.display=v==="home"?"block":"none";scrollTo({top:0,behavior:"smooth"});if(v==="me")cab()}
+var SD=[[1,"1 месяц",0],[6,"6 месяцев",5],[12,"12 месяцев",10]],SL=[["Старт","300–400 ₽",300,["Профиль чаще попадает в ленту","Отметка «Продвигается»"]],["Оптимум","500–700 ₽",500,["Приоритет в ленте и каталоге","Отметка «Продвигается»","Выше в подборках по направлению"]],["Максимум","800–1000 ₽",800,["Максимальный приоритет в ленте","Закрепление в начале направления","Выделение профиля цветом"]]],SX={m:1,p:500};
+function lvOf(p){return p>=800?2:p>=500?1:0}
+function drawSub(){$("sdur").innerHTML=SD.map(function(d){return'<button class="chp'+(SX.m==d[0]?" on":"")+'" onclick="SX.m='+d[0]+';drawSub()">'+d[1]+(d[2]?' <b class="gt">−'+d[2]+'%</b>':'')+'</button>'}).join("");
+$("slv").innerHTML=SL.map(function(l,i){return'<div class="card lv'+(lvOf(SX.p)==i?" on":"")+'" onclick="SX.p='+l[2]+';drawSub()"><h3>'+l[0]+'</h3><div class="rg gt">'+l[1]+' / мес</div><ul>'+l[3].map(function(t){return"<li>"+t+"</li>"}).join("")+'</ul></div>'}).join("");
+var h="";for(var p=300;p<=1000;p+=100)h+='<button class="chp'+(SX.p==p?" on":"")+'" onclick="SX.p='+p+';drawSub()">'+p+' ₽/мес</button>';$("sprice").innerHTML=h;
+var D=SD.filter(function(x){return x[0]==SX.m})[0],d=D[1],full=SX.p*SX.m,tot=Math.round(full*(100-D[2])/100);$("ssum").textContent=d+" · уровень «"+SL[lvOf(SX.p)][0]+"» · "+SX.p+" ₽ в месяц"+(D[2]?" · скидка "+D[2]+"%":"");$("stot").innerHTML=(D[2]?"<s style=\"font-size:16px;color:var(--mu);-webkit-text-fill-color:var(--mu)\">"+full.toLocaleString("ru")+" ₽</s> ":"")+tot.toLocaleString("ru")+" ₽";
+var a=null;try{a=JSON.parse(localStorage.getItem("sub")||"null")}catch(e){}$("sact").textContent=a?"Активная подписка: "+a.d+", "+a.p+" ₽ в месяц (до "+new Date(a.e).toLocaleDateString("ru")+").":""}
+function subBuy(){if(!U){toast("Войдите или зарегистрируйтесь, чтобы оформить подписку");go("auth");return}var e=new Date();e.setMonth(e.getMonth()+SX.m);var D=SD.filter(function(x){return x[0]==SX.m})[0],d=D[1],tot=Math.round(SX.p*SX.m*(100-D[2])/100);SV("sub",{m:SX.m,p:SX.p,d:d,e:e.getTime()});drawSub();toast("Подписка оформлена: "+d+", "+SX.p+" ₽ в месяц, итого "+tot.toLocaleString("ru")+" ₽")}
+function go(v){document.querySelectorAll(".view").forEach(function(e){e.classList.remove("on")});$(v).classList.add("on");$("ft").style.display=v==="home"?"block":"none";scrollTo({top:0,behavior:"smooth"});if(v==="me")cab();if(v==="sub")drawSub()}
 function acc(){$("acc").innerHTML=U?"<b>👤 "+esc(U.name)+(INB.length?" 🔔":"")+"</b>":"<b>Войти</b>"}acc();
 function enter(w){window.W=w;if(U){if(w==="pro")go("pro");else if(w==="client")go("cl");else go("me")}else go("auth")}
 function reg(){var n=$("rn").value.trim(),e=$("re").value.trim();if(!n||e.indexOf("@")<1||$("rp").value.length<6){alert("Укажите имя, email и пароль от 6 символов");return}
@@ -293,12 +325,12 @@ function sendM(){var t=$("cin").value.trim();if(!t)return;var n=CUR.n;CH[n].push
 setTimeout(function(){CH[n].push([CUR&&CUR.pro?"Спасибо, всё понял(а). Давайте обсудим сроки и стоимость.":"Спасибо за подробности! Сроки и стоимость можем обсудить прямо сейчас.",0]);if(CUR&&CUR.n===n)drawC()},2500)}
 function sup(){if(!$("sm").value.trim()||$("se").value.indexOf("@")<1){alert("Укажите email и опишите ситуацию");return}$("sok").textContent="Обращение принято. Ответим на email в течение рабочего дня.";$("sm").value=""}
 var hist=[],busy=false;
-function tg(){$("chat").classList.toggle("open");if($("chat").classList.contains("open")&&!$("msgs").children.length)addm("b","Привет! Я ИИ-помощник PAARI. Расскажите, какой специалист вам нужен, и я помогу с выбором и заявкой.")}
+function tg(){$("chat").classList.toggle("open");if($("chat").classList.contains("open")&&!$("msgs").children.length)addm("b","Привет! Я ИИ-помощник ПААРИ. Расскажите, какой специалист вам нужен, и я помогу с выбором и заявкой.")}
 function addm(c,t){var d=document.createElement("div");d.className="m "+c;d.textContent=t;$("msgs").appendChild(d);$("msgs").scrollTop=1e9;return d}
 $("ci").onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();ask()}};$("cin").onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();sendM()}};
 function fb(t){var c=guess(t);if(c<0)return"Расскажите подробнее: что нужно сделать, в каком городе и какой бюджет в рублях?";return"Вам подойдут специалисты в области «"+CATS[c]+"»: "+PROS.filter(function(p){return p.c===c}).slice(0,3).map(function(p){return p.n+" (от "+p.p+" ₽)"}).join(", ")+". Оформите заявку, чтобы получить отклики."}
 async function ask(){var t=$("ci").value.trim();if(!t||busy)return;$("ci").value="";addm("u",t);hist.push({role:"user",content:t});busy=true;var th=addm("b","Думаю…"),r;
-try{var s=await claude.use("sample");if(!s)throw 0;r=(await s("Ты ИИ-помощник платформы PAARI (клиенты ищут специалистов по России, цены в рублях). Отвечай по-русски, до 4 предложений, при нехватке деталей задай один вопрос. Специалисты: "+JSON.stringify(PROS.map(function(p){return[p.n,cat(p),p.p,p.city,p.d]}))+"\n\nДиалог:\n"+hist.map(function(h){return h.role+": "+h.content}).join("\n"),{cache:false})).text}catch(e){r=fb(t)}
+r=kb(t)
 th.textContent=r;hist.push({role:"assistant",content:r});busy=false}
 
 function inf(id){go("info");setTimeout(function(){$(id).scrollIntoView()},30)}
@@ -315,8 +347,8 @@ function oai(){if(!$("chat").classList.contains("open"))tg()}
 (function(){if(!window.IntersectionObserver)return;var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll("#home section").forEach(function(x,i){if(i>0){x.classList.add("rv");io.observe(x)}})})();
 
-var ORD={},PM=0,E=["🎨","💻","🛠️","📣","✍️","📸","⚖️","📚"],COL=["linear-gradient(135deg,#dbe8ff,#e9dcff)","linear-gradient(135deg,#ffe9d6,#ffd9e6)","linear-gradient(135deg,#d9f5ee,#dbeeff)","linear-gradient(135deg,#f1e4ff,#ffe3ef)"],
-WK=[["Логотип кофейни","Фирменный стиль"],["Лендинг для студии","Адаптивный сайт"],["Ремонт кухни","Под ключ"],["Продвижение кафе","Рост заявок"],["Перевод договора","RU/EN"],["Съёмка товаров","Каталог для магазина"],["Регистрация ИП","Пакет документов"],["Курс математики","Подготовка к экзамену"]],
+var ORD={},PM=0,E=["🎨","💻","🛠️","📣","✍️","📸","⚖️","📚","🍰"],COL=["linear-gradient(135deg,#dbe8ff,#e9dcff)","linear-gradient(135deg,#ffe9d6,#ffd9e6)","linear-gradient(135deg,#d9f5ee,#dbeeff)","linear-gradient(135deg,#f1e4ff,#ffe3ef)"],
+WK=[["Логотип кофейни","Фирменный стиль"],["Лендинг для студии","Адаптивный сайт"],["Ремонт кухни","Под ключ"],["Продвижение кафе","Рост заявок"],["Перевод договора","RU/EN"],["Съёмка товаров","Каталог для магазина"],["Регистрация ИП","Пакет документов"],["Курс математики","Подготовка к экзамену"],["Торт на заказ","Бенто и капкейки"]],
 ST={inv:"Счёт выставлен, ждём оплату",paid:"Оплачен",done:"Сделка завершена"};
 $("qc").innerHTML="<option value=''>Все области</option>"+opts;
 function getW(){var t=document.querySelectorAll(".wt"),p=document.querySelectorAll(".wp"),r=[];t.forEach(function(x,i){if(x.value.trim())r.push({t:x.value.trim(),d:"",pr:+p[i].value||0})});return r.length?r:null}
@@ -339,7 +371,7 @@ function say(n,t,w,ms){setTimeout(function(){CH[n].push([t,w]);if(CUR&&CUR.n==n&
 function priceOf(n){var p=PROS.filter(function(x){return x.n==n})[0];return p?p.p||5000:5000}
 function ordr(){var n=CUR.n,a=priceOf(n);CH[n].push(["Хочу заказать, давайте согласуем условия.",1]);drawC();say(n,"Условия согласованы. Выставляю счёт.",0,1500);setTimeout(function(){ORD[n]={amt:a,st:"inv"};CH[n].push(["Счёт на "+a.toLocaleString("ru")+" ₽ выставлен.",2]);if(CUR.n==n)drawC()},2500)}
 function invoice(){var a=+prompt("Сумма счёта, ₽","15000");if(!a)return;var n=CUR.n;ORD[n]={amt:a,st:"inv"};CH[n].push(["Счёт на "+a.toLocaleString("ru")+" ₽ выставлен.",2]);drawC();
-setTimeout(function(){ORD[n].st="paid";var f=Math.round(a*.1);CH[n].push(["💰 Оплата поступила: "+a.toLocaleString("ru")+" ₽. Комиссия платформы 10% — "+f.toLocaleString("ru")+" ₽. Вам зачислено "+(a-f).toLocaleString("ru")+" ₽.",2]);if(CUR.n==n)drawC()},4000)}
+setTimeout(function(){ORD[n].st="paid";var f=Math.round(a*.05);CH[n].push(["💰 Оплата поступила: "+a.toLocaleString("ru")+" ₽. Комиссия платформы 5% — "+f.toLocaleString("ru")+" ₽. Вам зачислено "+(a-f).toLocaleString("ru")+" ₽.",2]);if(CUR.n==n)drawC()},4000)}
 function payOpen(){$("pa").textContent="К оплате: "+ORD[CUR.n].amt.toLocaleString("ru")+" ₽";pmeth(0);$("pm").style.display="grid"}
 function pmeth(k){PM=k;$("cf2").style.display=k?"none":"block";$("sbp").style.display=k?"block":"none"}
 function payDo(){var n=CUR.n,o=ORD[n];$("pm").style.display="none";o.st="paid";CH[n].push(["✅ Оплата прошла ("+(PM?"СБП":"банковская карта")+"). Статус: Оплачен.",2]);drawC();
@@ -378,7 +410,7 @@ else if(o.st=="held")b=CUR.pro?'<button class="btn s" onclick="deliver()">Раб
 else if(o.st=="deliv")b=CUR.pro?'<span class="tag">Ждём подтверждения клиента…</span>':'<button class="btn s" onclick="confirmRecv()">Подтвердить получение</button>';
 else if(!CUR.pro&&!o.rv)b='<span class="tag">Оцените работу:</span><select id="rs" style="width:80px"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select><input id="rt" placeholder="Ваш отзыв" style="flex:1;min-width:140px"><button class="btn s" onclick="saveRev()">Отправить</button>';
 $("obar").innerHTML=b}
-function pay$(a){var f=Math.round(a*.1);return"Комиссия платформы 10% — "+f.toLocaleString("ru")+" ₽, специалисту переведено "+(a-f).toLocaleString("ru")+" ₽."}
+function pay$(a){var f=Math.round(a*.05);return"Комиссия платформы 5% — "+f.toLocaleString("ru")+" ₽, специалисту переведено "+(a-f).toLocaleString("ru")+" ₽."}
 function invoice(){var a=+prompt("Сумма счёта, ₽","15000");if(!a)return;var n=CUR.n;ORD[n]={amt:a,st:"inv"};CH[n].push(["Счёт на "+a.toLocaleString("ru")+" ₽ выставлен.",2]);drawC();
 setTimeout(function(){ORD[n].st="held";CH[n].push(["🔒 Клиент оплатил. Деньги хранятся на счёте платформы и поступят вам после подтверждения получения.",2]);if(CUR.n==n)drawC()},4000)}
 function payDo(){var n=CUR.n,o=ORD[n];$("pm").style.display="none";o.st="held";CH[n].push(["🔒 Оплата прошла ("+(PM?"СБП":"банковская карта")+"). Деньги хранятся на счёте платформы до вашего подтверждения получения.",2]);drawC();
@@ -412,12 +444,12 @@ if(PT=="orders"){h+='<p class="tag" style="margin-top:12px">Завершённы
 else{if(p.own)h+='<div class="card" style="margin-top:14px"><b>Новая публикация</b><label>Название работы</label><input id="np_t"><label>Описание</label><textarea id="np_x"></textarea><label>Фото или видео (до 4 МБ)</label><input type="file" accept="image/*,video/*" onchange="readImg(this.files[0])"><div class="tag" id="np_s"></div><div class="row"><button class="btn s" onclick="postPub('+i+')">Опубликовать</button></div></div>';
 h+=p.posts.map(function(q,k){var m=q.img?'<img alt="" src="'+q.img+'" style="width:100%;display:block">':q.vid?'<video src="'+q.vid+'" controls playsinline style="width:100%;display:block"></video>':'<div class="cov" style="background:'+COL[(p.c+k+1)%4]+'">'+E[p.c]+'</div>';return'<div class="card" style="margin-top:14px;padding:0;overflow:hidden">'+(k==0&&p.own?"":"")+m+'<div style="padding:14px"><b>'+esc(q.t)+'</b><p style="margin:4px 0;color:var(--mu)">'+esc(q.x)+'</p>'+q.c.map(function(c){return'<div class="rev"><b>'+esc(c[0])+'</b> '+esc(c[1])+'</div>'}).join("")+'<div class="cf"><input id="cm'+k+'" placeholder="Комментарий…"><button onclick="addC('+i+','+k+')">➤</button></div></div></div>'}).join("")}
 $("pv").innerHTML=h;go("prof")}
-function saveRev(){var n=CUR.n,p=PROS.filter(function(x){return x.n==n})[0],t=$("rt").value.trim()||"Всё отлично!",st=+$("rs").value;if(p){if(!p.orders)p.orders=demoOrders(p);p.orders.unshift({t:"Заказ через PAARI",cl:U.name,amt:ORD[n].amt,rv:[st,t]});savePros()}ORD[n].rv=1;CH[n].push(["Спасибо за отзыв! Он появится в профиле специалиста.",2]);drawC()}
+function saveRev(){var n=CUR.n,p=PROS.filter(function(x){return x.n==n})[0],t=$("rt").value.trim()||"Всё отлично!",st=+$("rs").value;if(p){if(!p.orders)p.orders=demoOrders(p);p.orders.unshift({t:"Заказ через ПААРИ",cl:U.name,amt:ORD[n].amt,rv:[st,t]});savePros()}ORD[n].rv=1;CH[n].push(["Спасибо за отзыв! Он появится в профиле специалиста.",2]);drawC()}
 
 function cat(p){return p.sv||CATS[p.c]}
 function pnum(v){var m=String(v||"").match(/\d[\d\s]*/);return m?+m[0].replace(/\s/g,""):0}
 function pstr(p){if(p.ps)return esc(/[₽р]/i.test(p.ps)?p.ps:p.ps+" ₽");return"от "+(p.p||0).toLocaleString("ru")+" ₽"}
-function guessC(t){t=(t||"").toLowerCase();var K=[/дизайн|логотип|баннер/,/сайт|прогр|разработ|приложен/,/ремонт|монтаж|сантех|электр|отдел/,/маркет|реклам|smm|таргет/,/текст|копирайт|статьи/,/фото|видео|съёмк|съемк|монтаж видео/,/юрист|право|договор/,/репетит|урок|обучен|преподав/];for(var i=0;i<K.length;i++)if(K[i].test(t))return i;return 0}
+function guessC(t){t=(t||"").toLowerCase();var K=[/дизайн|логотип|баннер/,/сайт|прогр|разработ|приложен/,/ремонт|монтаж|сантех|электр|отдел/,/маркет|реклам|smm|таргет/,/текст|копирайт|статьи/,/фото|видео|съёмк|съемк|монтаж видео/,/юрист|право|договор/,/репетит|урок|обучен|преподав/,/кондитер|торт|десерт|выпечк|повар|кулинар|кейтеринг|шеф-повар/];for(var i=0;i<K.length;i++)if(K[i].test(t))return i;return 0}
 
 function LS(k,d){try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}}
 function SV(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
@@ -498,7 +530,7 @@ function rbox(w,h,d,r,mat){var g=new T.ExtrudeGeometry(rr(w,h,r),{depth:d,bevelE
 function cvs(w,h,f){var c=document.createElement("canvas");c.width=w;c.height=h;f(c.getContext("2d"));var t=new T.CanvasTexture(c);t.encoding=T.sRGBEncoding;t.anisotropy=4;return t}
 function rc(x,a,b,w,h,r){x.beginPath();x.moveTo(a+r,b);x.arcTo(a+w,b,a+w,b+h,r);x.arcTo(a+w,b+h,a,b+h,r);x.arcTo(a,b+h,a,b,r);x.arcTo(a,b,a+w,b,r);x.closePath()}
 var FF="system-ui,-apple-system,sans-serif";
-var screen=cvs(512,1024,function(x){x.fillStyle="#f1f6ff";x.fillRect(0,0,512,1024);var lg=x.createLinearGradient(36,0,170,0);lg.addColorStop(0,"#2563eb");lg.addColorStop(.6,"#7c3aed");lg.addColorStop(1,"#ec4899");x.fillStyle=lg;x.font="800 36px "+FF;x.fillText("PAARI",36,78);x.fillStyle="#5b6b88";x.font="600 20px "+FF;x.fillText("Лента специалистов",250,76);
+var screen=cvs(512,1024,function(x){x.fillStyle="#f1f6ff";x.fillRect(0,0,512,1024);var lg=x.createLinearGradient(36,0,170,0);lg.addColorStop(0,"#2563eb");lg.addColorStop(.6,"#7c3aed");lg.addColorStop(1,"#ec4899");x.fillStyle=lg;x.font="800 36px "+FF;x.fillText("ПААРИ",36,78);x.fillStyle="#5b6b88";x.font="600 20px "+FF;x.fillText("Лента специалистов",250,76);
 function post(y,nm,sub,c1,c2,e1,e2){x.fillStyle="#fff";rc(x,22,y,468,440,30);x.fill();x.strokeStyle="#e1e8f5";x.lineWidth=2;x.stroke();x.fillStyle="#f4a259";x.beginPath();x.arc(74,y+54,28,0,7);x.fill();x.fillStyle="#5a2d00";x.font="700 30px "+FF;x.fillText(nm[0],62,y+65);
 x.fillStyle="#0f1b33";x.font="600 25px "+FF;x.fillText(nm,116,y+50);x.fillStyle="#5b6b88";x.font="20px "+FF;x.fillText(sub,116,y+80);
 [[c1,e1,40],[c2,e2,262]].forEach(function(a){var g=x.createLinearGradient(a[2],y+110,a[2]+190,y+310);g.addColorStop(0,a[0][0]);g.addColorStop(1,a[0][1]);x.fillStyle=g;rc(x,a[2],y+110,190,200,22);x.fill();x.font="70px "+FF;x.fillStyle="#fff";x.fillText(a[1],a[2]+60,y+230)});
@@ -533,18 +565,18 @@ requestAnimationFrame(loop);
 </script>
 <script>
 function goCat(i){go("cat");$("qc").value=i;rc2()}
-function calcP(){var a=+(($("cs").value||"").replace(/\D/g,""))||0,f=function(n){return Math.round(n).toLocaleString("ru")+" ₽"};$("c1").textContent=f(a*.9);$("c2").textContent=f(a*.95)}
+function calcP(){var a=+(($("cs").value||"").replace(/\D/g,""))||0,f=function(n){return Math.round(n).toLocaleString("ru")+" ₽"};$("c1").textContent=f(a*.05);$("c2").textContent=f(a*.95)}
 (function(){try{$("dirs").innerHTML=CATS.map(function(c,i){return'<button class="chp" onclick="goCat('+i+')">'+(E[i]||"")+" "+c+'</button>'}).join("")}catch(e){}calcP()})();
 </script>
 <script>
-var SYSP="Ты — умный ИИ-помощник платформы PAARI. Ты можешь отвечать на любые вопросы пользователя на любую тему: по-русски, дружелюбно, по делу, коротко (до 6 предложений, если не просят подробнее). Если не уверен — скажи об этом честно и не выдумывай. Юридические, налоговые и медицинские вопросы разбирай общими сведениями и советуй уточнить у специалиста. Факты о PAARI (не выдумывай ничего сверх них, у платформы нет статистики, партнёров и даты запуска): PAARI — платформа, где предприниматель или самозанятый показывает работы в профиле-витрине, получает клиентов и принимает оплату, не покидая приложения. Клиент листает ленту специалистов, пишет в чат и платит через безопасную сделку: деньги хранятся у платформы до подтверждения результата, при проблемах можно открыть спор. Специалист регистрируется по ИНН, сканы паспорта не хранятся, личность подтверждается через платёжного провайдера перед первой выплатой. Комиссия берётся только со специалиста: 10% с завершённого заказа, 5% с повторного заказа того же клиента; клиент ничего не доплачивает, подписки нет; клиенту начисляются бонусы 3%. Контакты в чате скрываются, отзывы можно оставить только после сделки через платформу. Сейчас сайт — демо-прототип: оплата и проверки имитируются. Чтобы найти специалистов на платформе, вызови инструмент search_specialists.";
-var KBX=[[/как стать|регистр|создать профиль|зарегистр/i,"Чтобы стать специалистом, нажмите «Создать профиль», укажите имя, услуги, город, цену и ИНН. Сканы паспорта не нужны: личность подтверждается позже, перед первой выплатой."],[/безопасн|эскроу|деньги.*(хран|держ)|гаранти/i,"Безопасная сделка: клиент платит заранее, но деньги остаются у платформы. Специалисту они переходят после того, как клиент подтвердил результат. Если что-то не так, можно открыть спор."],[/комисс|сколько стоит|тариф|цена платформы|подписк/i,"Платит только специалист: 10% с завершённого заказа и 5% с повторного заказа того же клиента. Клиент не доплачивает, подписки нет."],[/налог|чек|самозанят/i,"Налог со своего дохода платит сам специалист (самозанятый или ИП). Чек нужно формировать на каждое поступление денег. Точные ставки и правила лучше уточнить у бухгалтера или на сайте ФНС."],[/спор|возврат|обман|не пришл/i,"Пока клиент не подтвердил получение, он может нажать «Открыть спор» в чате: деньги замораживаются, и поддержка разбирается. Если деньги не пришли, напишите на странице «Поддержка»."],[/контакт|телефон|телеграм|ватсап/i,"Пока заказ идёт через платформу, контакты в чате скрыты: так сохраняется гарантия возврата и защита обеих сторон."],[/отзыв/i,"Отзыв можно оставить только после завершённой сделки через платформу, поэтому его нельзя накрутить."],[/бонус|повторн/i,"За повторные заказы у того же специалиста комиссия снижается до 5%, а клиенту начисляется 3% бонусами."]];
-function kb(t){for(var i=0;i<KBX.length;i++)if(KBX[i][0].test(t))return KBX[i][1];var c=guess(t);if(c>=0){found=PROS.map(function(p,k){return{p:p,k:k}}).filter(function(o){return o.p.c===c}).slice(0,4).map(function(o){return o.k});return"Для этой задачи подойдёт направление «"+CATS[c]+"». Вот специалисты из ленты:"}return"Я могу подобрать специалиста и объяснить, как устроен PAARI. Ответы на вопросы вне платформы работают, когда сайт открыт внутри Claude: на обычном хостинге для этого нужен сервер с ИИ."}
+var SYSP="Ты — умный ИИ-помощник платформы ПААРИ. Ты можешь отвечать на любые вопросы пользователя на любую тему: по-русски, дружелюбно, по делу, коротко (до 6 предложений, если не просят подробнее). Если не уверен — скажи об этом честно и не выдумывай. Юридические, налоговые и медицинские вопросы разбирай общими сведениями и советуй уточнить у специалиста. Факты о ПААРИ (не выдумывай ничего сверх них, у платформы нет статистики, партнёров и даты запуска): ПААРИ — платформа, где предприниматель или самозанятый показывает работы в профиле-витрине, получает клиентов и принимает оплату, не покидая приложения. Клиент листает ленту специалистов, пишет в чат и платит через безопасную сделку: деньги хранятся у платформы до подтверждения результата, при проблемах можно открыть спор. Специалист регистрируется по ИНН, сканы паспорта не хранятся, личность подтверждается через платёжного провайдера перед первой выплатой. Комиссия берётся только со специалиста: 5% с завершённого заказа; клиент ничего не доплачивает; есть необязательная подписка на продвижение профиля — от 300 ₽, цена зависит от качества услуг продвижения; клиенту начисляются бонусы 3%. Контакты в чате скрываются, отзывы можно оставить только после сделки через платформу. Сейчас сайт — демо-прототип: оплата и проверки имитируются. Чтобы найти специалистов на платформе, вызови инструмент search_specialists.";
+var KBX=[[/как стать|регистр|создать профиль|зарегистр/i,"Чтобы стать специалистом, нажмите «Создать профиль», укажите имя, услуги, город, цену и ИНН. Сканы паспорта не нужны: личность подтверждается позже, перед первой выплатой."],[/безопасн|эскроу|деньги.*(хран|держ)|гаранти/i,"Безопасная сделка: клиент платит заранее, но деньги остаются у платформы. Специалисту они переходят после того, как клиент подтвердил результат. Если что-то не так, можно открыть спор."],[/комисс|сколько стоит|тариф|цена платформы|подписк/i,"Платит только специалист: комиссия 5% с завершённого заказа. Клиент не доплачивает. Есть необязательная подписка на продвижение профиля — от 300 ₽, в зависимости от качества услуг продвижения."],[/налог|чек|самозанят/i,"Налог со своего дохода платит сам специалист (самозанятый или ИП). Чек нужно формировать на каждое поступление денег. Точные ставки и правила лучше уточнить у бухгалтера или на сайте ФНС."],[/спор|возврат|обман|не пришл/i,"Пока клиент не подтвердил получение, он может нажать «Открыть спор» в чате: деньги замораживаются, и поддержка разбирается. Если деньги не пришли, напишите на странице «Поддержка»."],[/контакт|телефон|телеграм|ватсап/i,"Пока заказ идёт через платформу, контакты в чате скрыты: так сохраняется гарантия возврата и защита обеих сторон."],[/отзыв/i,"Отзыв можно оставить только после завершённой сделки через платформу, поэтому его нельзя накрутить."],[/бонус|повторн/i,"За повторные заказы у того же специалиста комиссия снижается до 5%, а клиенту начисляется 3% бонусами."]];
+function kb(t){for(var i=0;i<KBX.length;i++)if(KBX[i][0].test(t))return KBX[i][1];var c=guess(t);if(c>=0){found=PROS.map(function(p,k){return{p:p,k:k}}).filter(function(o){return o.p.c===c}).slice(0,4).map(function(o){return o.k});return"Для этой задачи подойдёт направление «"+CATS[c]+"». Вот специалисты из ленты:"}return"Я могу подобрать специалиста и объяснить, как устроен ПААРИ."}
 function bub(c,t){var d=document.createElement("div");d.className="m "+c;d.textContent=t;$("msgs").appendChild(d);$("msgs").scrollTop=1e9;return d}
 var found=[];
 function aq(t){if(!$("chat").classList.contains("open"))tg();ask(t)}
 async function ask(txt){var t=(typeof txt==="string"?txt:$("ci").value).trim();if(!t||busy)return;$("ci").value="";var ac=$("ach");if(ac)ac.style.display="none";bub("u",t);hist.push({role:"user",content:t});busy=true;var th=bub("b","Думаю…"),r="";found=[];
-try{var s=await claude.use("sample");if(!s)throw 0;r=(await s(SYSP+"\n\nДиалог:\n"+hist.slice(-12).map(function(h){return(h.role=="user"?"Пользователь: ":"Помощник: ")+h.content}).join("\n")+"\nПомощник:",{cache:false,onText:function(o){th.textContent=o.text;$("msgs").scrollTop=1e9},tools:[{name:"search_specialists",description:"Найти специалистов на платформе PAARI по запросу, направлению или городу",inputSchema:{type:"object",properties:{query:{type:"string"}},required:["query"]},execute:function(i){var q=String(i.query||"").toLowerCase().split(/\s+/).filter(function(w){return w.length>2}),c=guess(i.query||"");var r2=PROS.map(function(p,k){return{p:p,k:k}}).filter(function(o){var tx=(o.p.n+" "+o.p.d+" "+cat(o.p)+" "+o.p.city).toLowerCase();return o.p.c===c||q.some(function(w){return tx.indexOf(w)>=0})}).slice(0,5);found=r2.map(function(o){return o.k});return r2.map(function(o){return{name:o.p.n,category:cat(o.p),price:o.p.ps||("от "+o.p.p+" ₽"),city:o.p.city,about:o.p.d}})}}]})).text}catch(e){r=kb(t)}
+r=kb(t)
 th.textContent=r||"Не получилось ответить, попробуйте переформулировать.";hist.push({role:"assistant",content:th.textContent});
 if(found.length){var f=document.createElement("div");f.className="fc";f.innerHTML=found.map(function(k){return'<button onclick="tg();prof('+k+')">👤 '+esc(PROS[k].n)+'</button>'}).join("")+'<button onclick="tg();go(\'cat\');rc2()">Вся лента →</button>';$("msgs").appendChild(f);$("msgs").scrollTop=1e9}
 busy=false}
@@ -580,5 +612,162 @@ function mm(p,q,k){var im=q.imgs&&q.imgs.length?q.imgs:(q.img?[q.img]:[]);return
 var _pf=prof;prof=function(i){_pf(i);var p=PROS[i];$("pv").insertAdjacentHTML("afterbegin",'<div class="cover">'+art(p.c,i%3)+'</div>')};
 (function(){var lb=document.createElement("div");lb.id="lb";lb.innerHTML="<img alt=''>";document.body.appendChild(lb);lb.onclick=function(){lb.style.display="none"};document.addEventListener("click",function(e){var t=e.target;if(t.tagName==="IMG"&&(t.classList.contains("pi")||t.closest(".tile,.car"))){lb.firstChild.src=t.src;lb.style.display="flex"}})})();
 if($("cl2")&&$("cat").classList.contains("on"))rc2();
+</script>
+<script>
+/* ===== Настройки ===== */
+// Необязательно: адрес вашего сервера с ИИ (POST {question, history} -> {answer}). Если пусто или недоступен — отвечает встроенный помощник.
+var AI_ENDPOINT="";
+
+/* ===== Аккаунты, коды, устройства ===== */
+function jget(k,d){try{var v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}}
+function jset(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function accs(){return jget("accs",{})}
+function normE(e){return String(e||"").trim().toLowerCase()}
+function devId(){var d=null;try{d=localStorage.getItem("did")}catch(e){}if(!d){d="d"+Date.now().toString(36)+Math.random().toString(36).slice(2,10);try{localStorage.setItem("did",d)}catch(e){}}return d}
+function devLabel(){var u=navigator.userAgent,os=/Windows/.test(u)?"Windows":/Android/.test(u)?"Android":/iPhone|iPad/.test(u)?"iOS":/Mac/.test(u)?"macOS":/Linux/.test(u)?"Linux":"устройство",br=/Edg\//.test(u)?"Edge":/OPR\//.test(u)?"Opera":/Chrome\//.test(u)?"Chrome":/Firefox\//.test(u)?"Firefox":/Safari\//.test(u)?"Safari":"браузер";return os+" · "+br}
+function sha(s){if(window.crypto&&crypto.subtle&&window.TextEncoder)return crypto.subtle.digest("SHA-256",new TextEncoder().encode(s)).then(function(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return("0"+x.toString(16)).slice(-2)}).join("")});var h=5381;for(var i=0;i<s.length;i++)h=((h<<5)+h+s.charCodeAt(i))|0;return Promise.resolve("f"+(h>>>0).toString(16))}
+function pwHash(pw,salt){return sha(salt+":"+pw)}
+function rememberDevice(email){var A=accs(),a=A[email];if(!a)return;a.devs=a.devs||[];var id=devId(),x=a.devs.filter(function(d){return d.id===id})[0];if(x)x.last=Date.now();else a.devs.push({id:id,label:devLabel(),last:Date.now()});A[email]=a;jset("accs",A);jset("lastUser",{email:email,name:a.name})}
+function knownUser(){var l=jget("lastUser",null);if(!l)return null;var a=accs()[l.email];if(!a||!a.verified)return null;var id=devId();return(a.devs||[]).some(function(d){return d.id===id})?l:null}
+function authTab(t){$("aL").style.display=t==="l"?"block":"none";$("aR").style.display=t==="r"?"block":"none";$("tabL").classList.toggle("on",t==="l");$("tabR").classList.toggle("on",t==="r");$("tabs").style.display="flex"}
+function authOpen(){var k=knownUser();go("auth");if(k){authTab("l");$("le").value=k.email;$("aWel").innerHTML="С возвращением, <b class=\"gt\">"+esc(k.name)+"</b>! Это устройство вам знакомо — просто введите пароль.";$("aWel").style.display="block"}else{authTab(accs()&&Object.keys(accs()).length&&jget("lastUser",null)?"l":"r");$("aWel").style.display="none";var l=jget("lastUser",null);if(l&&$("aL").style.display==="block")$("le").value=l.email}}
+enter=function(w){window.W=w;if(U){if(w==="pro")go("pro");else if(w==="client")go("cl");else go("me")}else authOpen()};
+function finishAuth(email){var a=accs()[email];U={name:a.name,email:email};try{localStorage.setItem("pu",JSON.stringify(U))}catch(x){}rememberDevice(email);acc();if($("pn"))$("pn").value=a.name;var w=window.W;if(w==="pro")go("pro");else if(w==="client")go("cl");else go("me")}
+async function reg(){var n=$("rn").value.trim(),e=normE($("re").value),p=$("rp").value;
+if(!n||!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(e)||p.length<6){toast("Укажите имя, корректный email и пароль от 6 символов");return}
+var A=accs();if(A[e]&&A[e].verified){toast("Этот email уже зарегистрирован — войдите");authTab("l");$("le").value=e;return}
+var salt=Math.random().toString(36).slice(2,12),h=await pwHash(p,salt);A[e]={name:n,salt:salt,hash:h,verified:1,devs:[]};jset("accs",A);toast("Регистрация прошла успешно. Добро пожаловать!");finishAuth(e)}
+var LF=jget("lf",{});
+async function login(){var e=normE($("le").value),p=$("lp").value,f=LF[e]||{n:0,u:0};
+if(f.u>Date.now()){toast("Слишком много попыток. Подождите "+Math.ceil((f.u-Date.now())/1000)+" с");return}
+var a=accs()[e];if(!a||!a.verified){toast("Аккаунт с таким email не найден. Зарегистрируйтесь");return}
+var h=await pwHash(p,a.salt);if(h!==a.hash){f.n++;if(f.n>=5){f.u=Date.now()+30000;f.n=0}LF[e]=f;jset("lf",LF);toast("Неверный пароль");return}
+delete LF[e];jset("lf",LF);$("lp").value="";finishAuth(e)}
+var _acc0=acc;acc=function(){$("acc").innerHTML=U?"<b>👤 "+esc(U.name)+(INB.length?" 🔔":"")+"</b>":"<b class=\"loginb\">Войти</b>"};acc();
+var _cab3=cab;cab=function(){_cab3();var d=(accs()[U&&U.email]||{}).devs;if(d&&$("mem"))$("mem").textContent=U.email+" · устройство запомнено"};
+var _lo=logout;logout=function(){_lo()};
+if(U&&accs()[U.email])rememberDevice(U.email);
+
+/* ===== Встроенный ИИ-помощник (работает без внешних сервисов) ===== */
+function nz(t){return String(t).toLowerCase().replace(/ё/g,"е").trim()}
+var AIK=[
+[/^(привет|здравств|добрый|доброе|хай|hello|hi\b|салют)/,"Здравствуйте! Я помощник ПААРИ. Подберу специалиста, объясню, как работают сделки, комиссия, подписка и регистрация. О чём расскажу?"],
+[/спасибо|благодар/,"Пожалуйста! Если появятся ещё вопросы — спрашивайте."],
+[/^(пока|до свидан|всего доброго)/,"До встречи! Возвращайтесь, если понадобится помощь."],
+[/что ты умеешь|что умеешь|чем (можешь )?помочь|помощь$|^помоги$/,"Я умею: подбирать специалистов из ленты, объяснять безопасную сделку, комиссию и подписку, рассказывать про регистрацию, вход, налоги самозанятых, споры и отзывы. Задайте вопрос своими словами."],
+[/что такое|о платформе|о паари|расскажи.*(паари|платформ|сайт)|для чего|зачем (нужен|нужна)/,"ПААРИ — платформа, где предприниматели и самозанятые показывают работы в профиле-витрине, находят клиентов и принимают оплату, не покидая приложения. Клиент листает ленту, пишет в чат и платит через безопасную сделку."],
+[/войти|вход|логин|пароль|забыл|авторизац/,"Чтобы войти, нажмите «Войти» в шапке сайта и введите email и пароль, указанные при регистрации. Если вы заходите с устройства, на котором уже входили, сайт не предложит регистрироваться заново — достаточно ввести пароль."],
+[/устройств|запомин|заново регистр|повторно регистр/,"Сайт запоминает устройство, с которого вы входили. На знакомом устройстве регистрация не предлагается — только вход по почте и паролю."],
+[/как стать|стать специалист|создать профиль|зарегистр|регистрац|регистр/,"Чтобы стать специалистом: зарегистрируйтесь (имя, email и пароль), нажмите «Создать профиль», укажите услуги, город, цену и ИНН. Сканы паспорта не нужны: личность подтверждается позже, перед первой выплатой."],
+[/подписк|продвиж|топ|реклам.*профил/,"Подписка на продвижение необязательна и поднимает ваш профиль в ленте. Цена — от 300 до 1000 ₽ в месяц, вы сами выбираете уровень: «Старт» 300–400 ₽, «Оптимум» 500–700 ₽, «Максимум» 800–1000 ₽. На 6 месяцев скидка 5%, на 12 месяцев — 10%. Оформить можно в разделе «Подписка» в меню."],
+[/комисс|сколько стоит|тариф|стоимост.*платформ|цена платформ|процент/,"Платит только специалист: комиссия 5% с каждого завершённого заказа. Клиент ничего не доплачивает. Дополнительно есть необязательная подписка на продвижение — от 300 ₽ в месяц."],
+[/безопасн|эскроу|деньги.*(хран|держ)|гаранти|как.*платит|оплат/,"Безопасная сделка: клиент платит заранее картой или через СБП, деньги хранятся у платформы. Специалисту они переходят после того, как клиент подтвердил результат. Если что-то не так, можно открыть спор."],
+[/как (это )?работает|как польз|с чего начать|инструкц/,"Всё просто: 1) специалист создаёт профиль и загружает работы; 2) клиент находит его в ленте, пишет в чат и оплачивает заказ — деньги ждут у платформы; 3) после выполнения клиент подтверждает результат, и деньги переходят специалисту за вычетом комиссии 5%."],
+[/вывод|выплат|получить деньги|когда.*деньги/,"Деньги переводятся специалисту после того, как клиент подтвердил получение результата, за вычетом комиссии 5%. Перед первой выплатой личность подтверждается через платёжного провайдера."],
+[/налог|чек|самозанят|ип\b|инн/,"Налог со своего дохода платит сам специалист (самозанятый или ИП), чек нужно формировать на каждое поступление. Для регистрации специалиста нужен ИНН. Точные ставки лучше уточнить у бухгалтера или на сайте ФНС."],
+[/спор|возврат|обман|мошенн|не пришл.*деньг/,"Пока клиент не подтвердил получение, он может нажать «Открыть спор» в чате: деньги замораживаются, и поддержка разбирается. Если деньги не пришли, напишите на странице «Поддержка»."],
+[/контакт|телефон|телеграм|ватсап|связаться|поддержк/,"Пока заказ идёт через платформу, контакты в чате скрыты — так сохраняется гарантия возврата. С поддержкой можно связаться на странице «Поддержка» или по почте support@paari.ru (пн–пт, 10:00–19:00 МСК)."],
+[/отзыв|рейтинг/,"Отзыв можно оставить только после завершённой сделки через платформу, поэтому его нельзя накрутить."],
+[/бонус|кэшбэк|кешбэк|скидк/,"Клиенту начисляются бонусы 3% с заказа. Комиссия 5% удерживается только со специалиста. Скидки на подписку: 5% при оплате на 6 месяцев и 10% на 12 месяцев."],
+[/безопасн.*данн|персональн|конфиденц|152/,"Мы собираем только данные, необходимые для работы сервиса, и работаем по законодательству РФ, включая 152-ФЗ. Подробности — в Политике конфиденциальности (ссылка внизу сайта)."],
+[/какое сегодня число|какая сегодня дата|который час|сколько времени|какой сегодня день/,function(){var d=new Date();return"Сейчас "+d.toLocaleDateString("ru",{weekday:"long",day:"numeric",month:"long",year:"numeric"})+", "+d.toLocaleTimeString("ru",{hour:"2-digit",minute:"2-digit"})+"."}]
+];
+function calcQ(t){var m=t.replace(/,/g,".").replace(/[x×]/g,"*").replace(/[:÷]/g,"/").match(/\d[\d\s.+\-*\/()]*[\d)]/);if(!m||!/[+\-*\/]/.test(m[0])||/[a-zа-я]/.test(m[0]))return null;var e=m[0].replace(/\s+/g,"");if(!/^[\d.+\-*\/()]+$/.test(e))return null;var r;try{r=Function('"use strict";return ('+e+')')()}catch(x){return null}if(!isFinite(r))return"На ноль делить нельзя.";return"Получается "+(Math.round(r*1e6)/1e6).toLocaleString("ru")}
+function pct(t){var m=t.match(/(\d+(?:[.,]\d+)?)\s*%\s*от\s*(\d[\d\s]*(?:[.,]\d+)?)/);if(!m)return null;var r=parseFloat(m[1].replace(",","."))*parseFloat(m[2].replace(/\s/g,"").replace(",","."))/100;return"Это "+(Math.round(r*100)/100).toLocaleString("ru")}
+function findPros(t){var q=nz(t).split(/[^а-яa-z0-9]+/).filter(function(w){return w.length>3}).map(function(w){return w.slice(0,Math.max(4,w.length-2))}),c=guess(nz(t)),r=PROS.map(function(p,k){return{p:p,k:k}}).filter(function(o){var tx=nz(o.p.n+" "+o.p.d+" "+cat(o.p)+" "+o.p.city);return o.p.c===c||q.some(function(w){return tx.indexOf(w)>=0})});return{c:c,list:r.slice(0,4)}}
+function aiAnswer(t){var n=nz(t),r;
+if(/паари|ПААРИ/i.test(t)&&!/(как|что|сколь|где|зачем)/.test(n)&&n.length<12)return AIK[4][1];
+var c=pct(n)||calcQ(n);if(c)return c;
+for(var i=0;i<AIK.length;i++)if(AIK[i][0].test(n))return typeof AIK[i][1]==="function"?AIK[i][1]():AIK[i][1];
+if(/специалист|мастер|найти|нужен|нужна|подбер|ищу|помоги найти|исполнител|услуг|сделать|закаж|город/.test(n)||guess(n)>=0){var f=findPros(n);if(f.list.length){found=f.list.map(function(o){return o.k});var cn=f.c>=0?"в направлении «"+CATS[f.c]+"»":"по вашему запросу";return"Нашёл специалистов "+cn+". Вот подходящие профили:"}if(f.c>=0)return"Подойдёт направление «"+CATS[f.c]+"». Откройте ленту и отфильтруйте по нему — или оформите заявку, чтобы получить отклики."}
+return"Я отвечаю на вопросы о ПААРИ: сделки, комиссия 5%, подписка, регистрация и вход, налоги, споры и отзывы, а ещё подбираю специалистов. Попробуйте, например: «Как работает безопасная сделка?», «Сколько стоит подписка?» или «Подбери фотографа в Москве»."}
+async function aiRemote(t){if(!AI_ENDPOINT)return null;try{var r=await fetch(AI_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:t,history:hist.slice(-10)})});if(!r.ok)return null;var j=await r.json();return j&&j.answer?String(j.answer):null}catch(e){return null}}
+function typeOut(el,txt,done){var i=0,step=Math.max(1,Math.ceil(txt.length/90));(function f(){i=Math.min(txt.length,i+step);el.textContent=txt.slice(0,i);$("msgs").scrollTop=1e9;if(i<txt.length)setTimeout(f,14);else done()})()}
+kb=function(t){return aiAnswer(t)};
+tg=function(){$("chat").classList.toggle("open");if($("chat").classList.contains("open")&&!$("msgs").children.length)bub("b","Здравствуйте! Я помощник ПААРИ. Подберу специалиста, расскажу про сделки, комиссию 5%, подписку, регистрацию и вход. Спросите о чём угодно по платформе.")};
+ask=async function(txt){var t=(typeof txt==="string"?txt:$("ci").value).trim();if(!t||busy)return;$("ci").value="";var ac=$("ach");if(ac)ac.style.display="none";bub("u",t);hist.push({role:"user",content:t});busy=true;var th=bub("b","Думаю…");found=[];
+var r=await aiRemote(t);if(r==null){r=aiAnswer(t);await new Promise(function(z){setTimeout(z,350)})}
+typeOut(th,r,function(){hist.push({role:"assistant",content:r});
+if(found.length){var f=document.createElement("div");f.className="fc";f.innerHTML=found.map(function(k){return'<button onclick="tg();prof('+k+')">👤 '+esc(PROS[k].n)+'</button>'}).join("")+'<button onclick="tg();go(\'cat\');rc2()">Вся лента →</button>';$("msgs").appendChild(f);$("msgs").scrollTop=1e9}
+busy=false})};
+
+/* ===== Подбор специалистов ИИ-помощником ===== */
+var STEMS=[["дизайн логотип бренд баннер упаковк фирменн макет презентац иллюстрац граф"],["сайт лендинг разработ программист веб web бот магазин приложен верстк"],["ремонт строит плитк электрик отделк сантехник маляр ванн"],["маркетинг маркетолог реклам smm смм соцсет таргет контекст"],["текст перевод переводчик копирайт статья статью редактур корректор"],["фото видео съемк съёмк оператор монтаж рилс ролик видеограф"],["юрист юридич договор бухгалтер ооо адвокат"],["репетитор уроки урок обучен экзамен егэ огэ математик английск учител"]].map(function(a){return a[0].split(" ")});
+var CITYR=[["москв","Москва"],["петербург","Санкт-Петербург"],["спб","Санкт-Петербург"],["питер","Санкт-Петербург"],["казан","Казань"],["екатеринбург","Екатеринбург"],["екб","Екатеринбург"],["краснодар","Краснодар"],["новосибирск","Новосибирск"]];
+var LASTQ={c:-1,city:"",bud:0};
+function words(n){return n.split(/[^а-яa-z0-9]+/).filter(Boolean)}
+function detCat(n){var w=words(n),best=-1,sc=0;STEMS.forEach(function(st,i){var k=0;w.forEach(function(x){if(st.some(function(s){return x.indexOf(s)===0}))k++});if(k>sc){sc=k;best=i}});return best}
+function detCity(n){for(var i=0;i<CITYR.length;i++)if(n.indexOf(CITYR[i][0])>=0)return CITYR[i][1];var found=null;PROS.forEach(function(p){var c=nz(p.city||"");if(c.length>3&&c!=="удаленно"&&n.indexOf(c.slice(0,Math.max(4,c.length-2)))>=0)found=p.city});return found}
+function detBud(n){var m=n.match(/до\s*(\d[\d\s]*(?:[.,]\d+)?)\s*(тыс|т\.р|к\b|k\b)?/);if(!m)return 0;var v=parseFloat(m[1].replace(/\s/g,"").replace(",","."));if(m[2])v*=1000;return v>=100?v:0}
+function wantsSearch(n){return /(подбер|подойд|найд|найти|ищу|ищем|нужен|нужна|нужно|нужны|посоветуй|порекомендуй|порекомендуйте|предложи|покажи|хочу заказ|заказать|кто может|есть ли|специалист|мастер|исполнител)/.test(n)}
+var RE=0;function specSearch(n){RE=0;var c=detCat(n),city=detCity(n),bud=detBud(n),srch=wantsSearch(n);
+if(c<0&&!city&&!bud&&!srch)return null;
+if(c<0&&(city||bud)&&LASTQ.c>=0&&(srch||/^(а |и |тогда|в |из |до )/.test(n)||n.split(" ").length<=4)){c=LASTQ.c;RE=1}
+if(c<0&&!srch)return null;
+if(c<0){return{text:"Подскажу! Какой специалист вам нужен? Выберите направление или опишите задачу своими словами (например: «нужен фотограф в Москве до 15000 ₽»).",chips:CATS.map(function(x){return"Подбери: "+x}),list:[]}}
+if(!city)city=RE&&LASTQ.c===c?LASTQ.city:"";if(!bud&&RE&&LASTQ.c===c)bud=LASTQ.bud;
+LASTQ={c:c,city:city||"",bud:bud||0};
+var w=words(n),sc=PROS.map(function(p,k){var s=0;if(p.c===c)s+=10;var tx=nz(p.n+" "+p.d+" "+(p.sv||"")+" "+cat(p));var kh=0;w.forEach(function(x){if(x.length>4&&STEMS[c].every(function(st){return x.indexOf(st)!==0})&&tx.indexOf(x.slice(0,x.length-2))>=0){s+=2;kh++}});
+var remote=nz(p.city||"")==="удаленно";if(city){if(p.city===city)s+=6;else if(remote)s+=2}
+if(bud){if(p.p<=bud)s+=3;else s-=3}s+=(p.r||0)*.6;if(p.vf==="pending")s-=1;return{p:p,k:k,s:s,kh:kh,cityOk:!city||p.city===city,remote:remote}}).filter(function(o){return o.p.c===c||o.kh>0});
+sc.sort(function(a,b){return b.s-a.s});var top=sc.slice(0,4);
+if(!top.length)return{text:"Пока не нашёл подходящих специалистов в направлении «"+CATS[c]+"». Оформите заявку — специалисты откликнутся сами.",list:[]};
+var inCity=top.filter(function(o){return o.p.city===city}).length,t="Направление «"+CATS[c]+"»"+(city?", "+city:"")+(bud?", бюджет до "+bud.toLocaleString("ru")+" ₽":"")+". ";
+if(city&&!inCity)t+="В городе "+city+" пока нет подходящих специалистов, поэтому показываю тех, кто работает удалённо или в других городах. ";
+else if(city&&top.some(function(o){return!o.cityOk&&!o.remote}))t+="";
+if(bud&&top.every(function(o){return o.p.p>bud}))t+="Ниже вашего бюджета предложений нет, показываю ближайшие по цене. ";
+t+="Подобрал "+top.length+" "+(top.length==1?"профиль":top.length<5?"профиля":"профилей")+":";
+return{text:t,list:top.map(function(o){return o.k}),cards:1}}
+var SPEC=null;
+var _aiAnswer=aiAnswer;
+aiAnswer=function(t){var n=nz(t);SPEC=null;var skip=/(как стать|стать специалист|создать профиль|регистр|комисс|подписк|налог|спор|отзыв|безопасн)/.test(n)&&detCat(n)<0;
+if(!skip){var r=specSearch(n);if(r){SPEC=r;found=r.list;return r.text}}return _aiAnswer(t)};
+function pcard(k){var p=PROS[k];return'<div class="pcard"><div style="display:flex;gap:10px;align-items:center">'+avt(p)+'<div style="min-width:0"><b>'+esc(p.n)+'</b> <span class="pill">★ '+(p.r||"новый")+'</span><div class="tag">'+cat(p)+" · "+esc(p.city)+'</div></div></div><p>'+esc(p.d)+'</p><div class="row" style="margin-top:8px;gap:8px"><span class="pill" style="margin:0;align-self:center">'+pstr(p)+'</span><button class="btn s" onclick="tg();prof('+k+')">Профиль</button><button class="btn o s" onclick="tg();chat(PROS['+k+'].n)">Написать</button></div></div>'}
+ask=async function(txt){var t=(typeof txt==="string"?txt:$("ci").value).trim();if(!t||busy)return;$("ci").value="";var ac=$("ach");if(ac)ac.style.display="none";bub("u",t);hist.push({role:"user",content:t});busy=true;var th=bub("b","Думаю…");found=[];SPEC=null;
+var r=await aiRemote(t),sp=null;if(r==null){r=aiAnswer(t);sp=SPEC;await new Promise(function(z){setTimeout(z,350)})}
+typeOut(th,r,function(){hist.push({role:"assistant",content:r});var m=$("msgs");
+if(sp&&sp.cards&&sp.list.length){var d=document.createElement("div");d.className="pcs";d.innerHTML=sp.list.map(pcard).join("")+'<div class="fc"><button onclick="tg();go(\'cat\');rc2()">Вся лента →</button><button onclick="tg();go(\'cl\')">Оформить заявку</button></div>';m.appendChild(d)}
+else if(sp&&sp.chips){var f=document.createElement("div");f.className="fc";f.innerHTML=sp.chips.map(function(c){return'<button onclick="aq(\''+c+'\')">'+c.replace("Подбери: ","")+'</button>'}).join("");m.appendChild(f)}
+else if(found.length){var f2=document.createElement("div");f2.className="fc";f2.innerHTML=found.map(function(k){return'<button onclick="tg();prof('+k+')">👤 '+esc(PROS[k].n)+'</button>'}).join("")+'<button onclick="tg();go(\'cat\');rc2()">Вся лента →</button>';m.appendChild(f2)}
+m.scrollTop=1e9;busy=false})};
+
+/* ===== Живая речь, кулинария, «ещё варианты» ===== */
+STEMS[8]="кондитер торт тортик десерт капкейк макарон пирожн выпечк пряник эклер чизкейк булочк пирог сладост шоколад конфет повар шеф кулинар кейтеринг банкет фуршет шашлык блюд".split(" ");
+var RX8=/(печь|испечь|испеч|печет|печёт|печёшь|напечь|накорм|приготов|готовить|готовит|готовка|готовки|готовку|готовят|приготовит|на день рождения|на свадьбу|на юбилей|на праздник|на корпоратив|на мероприятие|для гостей|для праздника|домашн\S* еда|обеды)/;
+var _detCat=detCat;
+detCat=function(n){var c=_detCat(n);if(c<0&&RX8.test(n)&&/(торт|десерт|пирог|печь|печ[её]т|испеч|пирожн|сладк|приготов|готов|накорм|еда|обед|гост|праздник|юбилей|свадьб|день рождения|корпоратив|мероприят)/.test(n))return 8;
+if(c>=0&&c!==8&&/(торт|десерт|кондитер|повар|выпечк|кейтеринг|банкет)/.test(n))return 8;return c};
+wantsSearch=function(n){return /(подбер|подойд|найд|найти|найдешь|найдёшь|ищу|ищем|нужен|нужна|нужно|нужны|надо|надобн|требуется|мне бы|хочу|хотел бы|хотела бы|хотим|посоветуй|порекомендуй|порекомендуешь|посоветуешь|подскажи|подскажешь|предложи|покажи|заказать|закажу|кто может|кто умеет|кто сделает|кто напечёт|кто напечет|кто приготовит|кто поможет|есть ли|есть кто|есть у вас|можешь|сможешь|можно найти|где найти|где взять|помоги (найти|подобрать|выбрать)|выручай|срочно|специалист|мастер|исполнител|организ|сделать|сделайте|сделает|умеет|умеют|работает|работают|берется|берётся|берутся)/.test(n)};
+var _specSearch=specSearch;
+function nextMore(){var L=LASTQ.all;if(!L||!L.length)return null;var part=L.slice(LASTQ.i,LASTQ.i+4);if(!part.length)return{text:"Это все подходящие специалисты по вашему запросу. Можно изменить город или бюджет, или оформить заявку — специалисты откликнутся сами.",list:[]};LASTQ.i+=part.length;return{text:"Вот ещё варианты:",list:part.map(function(o){return o.k}),cards:1,more:1}}
+specSearch=function(n){
+if(/(^|\s)(еще|ещё|другие|другого|другой|других|больше|дальше|не то|не подходит|не понравил|покажи ещё|покажи еще)(\s|$)/.test(n)&&LASTQ.all&&LASTQ.c>=0)return nextMore();
+if(/(почем|почём|сколько берет|сколько берёт|сколько стоят|какие цены|ценник|дорого|по деньгам|во сколько обойд)/.test(n)&&LASTQ.c>=0&&detCat(n)<0){var pr=PROS.filter(function(p){return p.c===LASTQ.c}).map(function(p){return p.p}).sort(function(a,b){return a-b});if(pr.length)return{text:"Специалисты в направлении «"+CATS[LASTQ.c]+"» берут примерно от "+pr[0].toLocaleString("ru")+" до "+pr[pr.length-1].toLocaleString("ru")+" ₽ — зависит от задачи. Могу подобрать вариант под ваш бюджет: напишите, например, «до "+Math.round(pr[Math.floor(pr.length/2)]/100)*100+" ₽».",list:[]}}
+return _specSearch(n)};
+/* сохраняем полный отсортированный список для «ещё» */
+var _sortHook=Array.prototype.sort;
+/* дополняем подбор: слова запроса вроде «кондитер» или «повар» поднимают подходящие профили */
+specSearch=(function(prev){return function(n){var r=prev(n);if(!r||r.more||!r.list||!r.list.length||LASTQ.c<0)return r;var cond=/(торт|десерт|кондитер|пирожн|выпечк|пряник|эклер|капкейк|макарон|сладост|шоколад|чизкейк|булочк|пирог)/.test(n),cook=/(повар|банкет|фуршет|шашлык|кейтеринг|готов|приготов|накорм|обед|ужин|плов|кухн)/.test(n);var w=words(n).filter(function(x){return x.length>=5}),all=PROS.map(function(p,k){var tx=nz(p.n+" "+p.d+" "+(p.sv||"")+" "+p.e),sc=0,city=LASTQ.city,bud=LASTQ.bud;if(p.c!==LASTQ.c)return null;if(LASTQ.c===8){var dd=nz(p.d);if(cond&&dd.indexOf("кондитер")>=0)sc+=8;if(cook&&dd.indexOf("повар")>=0)sc+=8}w.forEach(function(x){if(tx.indexOf(x.slice(0,Math.max(4,x.length-3)))>=0)sc+=4});if(city){if(p.city===city)sc+=6;else if(nz(p.city)==="удаленно")sc+=2}if(bud){sc+=p.p<=bud?3:-3}sc+=(p.r||0)*.6;return{k:k,p:p,s:sc}}).filter(Boolean).sort(function(a,b){return b.s-a.s});
+LASTQ.all=all;
+if(!(r.text&&/Не нашёл|пока не нашёл/i.test(r.text))){r.list=all.slice(0,4).map(function(o){return o.k});LASTQ.i=r.list.length;var t=r.text;r.text=t.replace(/Подобрал \d+ \S+:/,"Подобрал "+r.list.length+" "+(r.list.length==1?"профиль":r.list.length<5?"профиля":"профилей")+":")}
+return r}})(specSearch);
+/* живая речь: малый разговор */
+var AIK2=[
+[/^(ку|привет|прив|приветик|здарова|здорово|здрасьте|здрасти|хэй|хей|добрый (вечер|день|утро)|доброе утро|доброго времени|салам|алло|эй|слушай)(?=[\s,!.?]|$)/,"Привет! Помогу 🙂 Скажите, кого ищете — фотографа, кондитера, повара, дизайнера или кого-то ещё, — и я подберу варианты. Или спросите про сделки, комиссию и подписку."],
+[/как (у тебя )?дела|как ты(?=[\s,!.?]|$)|как жизнь|что нового|как сам|как сама/,"Спасибо, всё хорошо! Готов помочь с поиском специалиста или ответить на вопросы про платформу. Что вас интересует?"],
+[/кто ты|ты кто|как тебя зовут|ты робот|ты человек|ты бот|ты настоящий|ты нейросеть|ты живой|с кем я (говорю|общаюсь)/,"Я ИИ-помощник ПААРИ — программа, а не человек. Помогаю найти специалиста и разобраться, как устроена платформа."],
+[/^(спс|сяп|мерси|благодарочка|благодарю|огромное спасибо|спасибочки|класс|круто|супер|отлично|здорово|понятно|ясно|ок|окей|ладно|хорошо|ага|угу|принято|годится|норм|нормально)[\s!.)]*$/,"Отлично! Если нужно подобрать ещё кого-то или остались вопросы — пишите."],
+[/^(да|давай|давайте|конечно|ну давай)[\s!.]*$/,"Хорошо! Напишите, какой специалист нужен и в каком городе, — подберу несколько профилей."],
+[/^(нет|не надо|не нужно|не хочу)[\s!.]*$/,"Хорошо, без проблем. Если что-то понадобится — я здесь."],
+[/не понял|не поняла|не понимаю|повтори|что\??$|в смысле|поясни|объясни проще/,"Попробую проще: опишите, кого вы ищете (например, «нужен кондитер на свадьбу в Москве»), — и я покажу подходящие профили. Или спросите про оплату, комиссию, подписку."],
+[/извини|прости|сорри/,"Всё в порядке! Чем могу помочь?"],
+[/ты (умеешь|можешь|знаешь).*(торт|готов)|можешь.*(найти|подобрать).*(повар|кондитер)/,"Да, подберу кондитера или повара: напишите город и повод, например «нужен торт на день рождения в Казани»."],
+[/что дальше|что делать дальше|как заказать|как оформить заказ|как связаться со? специалист|как написать специалист/,"Откройте профиль специалиста и нажмите «Написать»: в чате обсудите детали, специалист выставит счёт, вы оплатите его картой или через СБП — деньги хранятся у платформы, пока вы не подтвердите результат."],
+[/где (посмотреть|найти).*(работы|портфолио|примеры)|покажи работы/,"Работы специалистов — в «Каталоге» (лента) и в профилях: откройте профиль, там портфолио, отзывы и цены."]
+];
+var _aiA2=aiAnswer;
+aiAnswer=function(t){var n=nz(t).replace(/[!?.,;:()"«»]+/g," ").replace(/\s+/g," ").trim();var skip=detCat(n)>=0||/(торт|кондитер|повар|фото|дизайн|юрист|ремонт|репетитор)/.test(n);if(!skip||n.split(" ").length<=2){for(var i=0;i<AIK2.length;i++)if(AIK2[i][0].test(n)){SPEC=null;return AIK2[i][1]}}return _aiA2(t)};
+
+var _art=art;art=function(c,k){if(c!=8)return _art(c,k);var q=PAL[k%3],a=q[0],b=q[1],f=q[2],g=q[3];return'<svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="200" fill="'+a+'"/><circle cx="176" cy="26" r="72" fill="'+b+'"/><circle cx="16" cy="196" r="62" fill="'+b+'" opacity=".7"/><g'+(k%2?' transform="translate(200 0) scale(-1 1)"':"")+'><ellipse cx="100" cy="150" rx="62" ry="10" fill="#fff"/><rect x="62" y="108" width="76" height="38" rx="6" fill="'+f+'"/><rect x="72" y="76" width="56" height="34" rx="6" fill="'+g+'"/><path d="M62 112q9 10 19 0t19 0 19 0 19 0" fill="#fff"/><rect x="98" y="52" width="4" height="22" rx="2" fill="#0f1b33"/><ellipse cx="100" cy="46" rx="5" ry="8" fill="#f5b800"/><circle cx="84" cy="96" r="4" fill="#fff"/><circle cx="116" cy="96" r="4" fill="#fff"/></g></svg>'};
 </script>
 </body></html>
