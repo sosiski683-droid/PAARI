@@ -121,12 +121,15 @@ footer{border-top-color:#7c3aed}
 .cov.art{position:relative;overflow:hidden;padding:0}.cov.art>svg{width:100%;height:100%;display:block}.cov.pa{aspect-ratio:1;width:100%;height:auto}
 .cover{height:130px;border-radius:20px;overflow:hidden;margin-bottom:16px;position:relative}.cover svg{width:100%;height:100%;display:block}
 .tile img,.pi{cursor:zoom-in}#lb{position:fixed;inset:0;z-index:90;background:#0b1020e6;display:none;align-items:center;justify-content:center;padding:20px;cursor:zoom-out}#lb img{max-width:100%;max-height:100%;border-radius:14px}
+#dots{position:fixed;right:14px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:3;opacity:1;transition:opacity .3s}#dots i{width:8px;height:8px;border-radius:50%;background:#2563eb33;transition:all .3s}#dots i.on{background:var(--ac);height:22px;border-radius:99px}
+@media(max-width:760px){.s3{padding-top:50vh!important;padding-bottom:4vh!important}.s3.hero h1{font-size:27px}.s3.hero .lead,.pn .lead{font-size:15px;margin-bottom:10px}.pn h2{font-size:22px}.badge{margin-bottom:8px}.pp{font-size:12.5px;padding:7px 11px;margin-top:10px}#dots{right:6px}.s3.hero .row .btn{padding:12px 18px;font-size:14px}}
+.s3.hero .pn{position:relative}.s3.hero .row{flex-wrap:wrap}
 </style></head><body><div id="pg" style="position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#2563eb,#7c3aed,#ec4899);z-index:60"></div>
 <svg width="0" height="0" style="position:absolute"><symbol id="pc" viewBox="0 0 400 300"><rect x="40" y="30" width="320" height="195" rx="14" fill="#fff" stroke="#2563eb" stroke-width="5"/><rect x="60" y="50" width="280" height="30" rx="15" fill="#dbe8ff"/><circle cx="80" cy="65" r="8" fill="#2563eb"/><rect x="98" y="60" width="130" height="10" rx="5" fill="#93b4f5"/><rect x="60" y="95" width="130" height="55" rx="10" fill="#f1f6ff"/><circle cx="82" cy="115" r="12" fill="#2563eb"/><rect x="100" y="108" width="75" height="8" rx="4" fill="#93b4f5"/><rect x="205" y="95" width="135" height="55" rx="10" fill="#f1f6ff"/><circle cx="227" cy="115" r="12" fill="#60a5fa"/><rect x="245" y="108" width="75" height="8" rx="4" fill="#93b4f5"/><rect x="60" y="162" width="280" height="45" rx="10" fill="#f1f6ff"/><rect x="75" y="178" width="160" height="10" rx="5" fill="#93b4f5"/><rect x="262" y="172" width="64" height="26" rx="8" fill="#2563eb"/><path d="M150 225h100l20 40H130z" fill="#dbe8ff"/><rect x="100" y="265" width="200" height="12" rx="6" fill="#2563eb"/></symbol></svg>
 <header><div class="w"><div class="logo" onclick="go('home')">PAARI</div><nav><a class="h" onclick="go('cat');rc2()">Каталог</a><a class="h" onclick="go('faq')">Вопросы</a><a class="h" onclick="go('support')">Поддержка</a><a id="acc" onclick="enter()"><b>Войти</b></a></nav></div></header>
 <main>
 <div id="home" class="view on">
-<canvas id="gl"></canvas>
+<canvas id="gl"></canvas><div id="dots"><i class="on"></i><i></i><i></i><i></i></div>
 <div id="scene">
 <section class="s3 hero"><div class="w"><div class="pn"><div class="badge">✨ Для предпринимателей и самозанятых</div><h1>Покажите работы — <span class="gt">получите клиентов</span> и оплату</h1><p class="lead">PAARI — витрина для мастеров: клиент видит ваши работы и платит безопасно.</p><div class="row"><button class="btn" onclick="enter('pro')">Создать профиль</button><button class="btn o" onclick="go('cat');rc2()">Смотреть работы</button></div><div class="pp">🔒 Деньги хранятся у платформы, пока клиент не подтвердит результат.</div></div></div></section>
 <section class="s3"><div class="w"><div class="pn"><div class="eb">Как это работает · шаг 1</div><h2>Вы создаёте профиль</h2><p class="lead">Загружаете фото и видео своих работ и пишете, что делаете и за сколько.</p></div></div></section>
@@ -509,19 +512,22 @@ var p=new T.Mesh(new T.PlaneGeometry(.72,.72),new T.MeshBasicMaterial({map:tx}))
 var coin=new T.Group(),cm=new T.Mesh(new T.CylinderGeometry(.42,.42,.09,48),new T.MeshPhysicalMaterial({color:0xf5b800,metalness:1,roughness:.25,clearcoat:.6}));cm.rotation.x=Math.PI/2;coin.add(cm);
 var cf=new T.Mesh(new T.CircleGeometry(.34,40),new T.MeshBasicMaterial({map:cvs(256,256,function(x){x.fillStyle="#f5b800";x.fillRect(0,0,256,256);x.fillStyle="#5a3d00";x.font="700 150px "+FF;x.textAlign="center";x.fillText("₽",128,180)})}));cf.position.z=.05;coin.add(cf);S.add(coin);
 var sh=new T.Mesh(new T.PlaneGeometry(3,3),new T.MeshBasicMaterial({map:cvs(128,128,function(x){var g=x.createRadialGradient(64,64,0,64,64,64);g.addColorStop(0,"rgba(15,27,51,.3)");g.addColorStop(1,"rgba(15,27,51,0)");x.fillStyle=g;x.fillRect(0,0,128,128)}),transparent:true,depthWrite:false}));sh.rotation.x=-Math.PI/2;sh.position.y=-2.2;S.add(sh);
-var st={ry:-.4,rx:.05,x:0,y:0,s:1},mx=0,my=0,mob=false,oy=0;
-function size(){var w=innerWidth,h=innerHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();mob=w<760;S.scale.setScalar(mob?.6:1);oy=mob?1.9:0}
-function px(){return mob?0:2.1}
-size();addEventListener("resize",size);st.x=px();
-if(window.gsap&&!RM){var tg=gsap.timeline({scrollTrigger:{trigger:"#scene",start:"top top",end:"bottom bottom",scrub:1,invalidateOnRefresh:true,onLeave:function(){cv.style.visibility="hidden"},onEnterBack:function(){cv.style.visibility="visible"}}});
+var st={ry:-.4,rx:.05,x:0,y:0,s:1},mx=0,my=0,mob=false,oy=0,XC=0,OS=1,dt=document.getElementById("dots"),dts=[].slice.call(dt.children);
+function size(){var w=innerWidth,h=innerHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();mob=w<760;var hh=2.86,hw=hh*C.aspect,sc;
+if(mob){sc=Math.min(hh*2*.42/3.7,hw*2*.92/3.9);S.scale.setScalar(sc);oy=(.5-.26)*2*hh/sc;XC=0;OS=.7}
+else{var pn=document.querySelector("#scene .pn"),r=pn?pn.getBoundingClientRect().right:0;if(!r)r=560;var tr=r+28,free=Math.max(w-tr-20,200);sc=Math.min(1,(free/w*2*hw)/4.1,(hh*2*.84)/3.7);S.scale.setScalar(sc);XC=(((tr+w)/2/w)-.5)*2*hw/sc;oy=0;OS=1}
+if(scrollY<50)st.x=XC}
+function px(){return XC}
+size();addEventListener("resize",size);addEventListener("load",function(){size();if(window.ScrollTrigger)ScrollTrigger.refresh()});
+if(window.gsap&&!RM){var tg=gsap.timeline({scrollTrigger:{trigger:"#scene",start:"top top",end:"bottom bottom",scrub:1,invalidateOnRefresh:true,onLeave:function(){cv.style.visibility="hidden"},onEnterBack:function(){cv.style.visibility="visible"},onUpdate:function(t){var n=Math.round(t.progress*3);dts.forEach(function(d,i){d.classList.toggle("on",i==n)})},onToggle:function(t){dt.style.opacity=t.isActive?1:0}}});
 tg.to(st,{ry:.45,x:function(){return px()},duration:1}).to(st,{ry:-.5,x:function(){return -px()},duration:1}).to(st,{ry:.5,x:function(){return px()},duration:1})}
 if(!RM)addEventListener("pointermove",function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
-var _g=window.go;window.go=function(v){_g.apply(null,arguments);if(v==="home"&&window.ScrollTrigger)setTimeout(function(){ScrollTrigger.refresh()},80)};
+var _g=window.go;window.go=function(v){_g.apply(null,arguments);if(v==="home"&&window.ScrollTrigger)setTimeout(function(){size();ScrollTrigger.refresh()},80)};
 function loop(t){requestAnimationFrame(loop);if(!H.classList.contains("on"))return;var s=t/1000,sw=RM?0:Math.sin(s*.8)*.08,Y=st.y+oy;
 phone.rotation.y+=((st.ry+sw+(mob?0:mx*.35))-phone.rotation.y)*.08;phone.rotation.x+=((st.rx+(mob?0:my*.2))-phone.rotation.x)*.08;
 phone.position.x+=(st.x-phone.position.x)*.1;phone.position.y+=((Y+(RM?0:Math.sin(s*1.2)*.06))-phone.position.y)*.1;
-sat.forEach(function(g){var d=g.userData,a=d.a+(RM?0:s*.35);g.position.set(phone.position.x+Math.cos(a)*d.r*1.1,phone.position.y+d.y+(RM?0:Math.sin(s+d.a)*.08),Math.sin(a)*d.r*.6+.3);g.rotation.y=-Math.cos(a)*.5});
-coin.position.set(phone.position.x+.95,phone.position.y-1.45,.5);coin.rotation.y=RM?0:s*.9;sh.position.x=phone.position.x;sh.position.y=phone.position.y-2.2;R.render(S,C)}
+sat.forEach(function(g){var d=g.userData,a=d.a+(RM?0:s*.35);g.position.set(phone.position.x+Math.cos(a)*d.r*1.1*OS,phone.position.y+d.y+(RM?0:Math.sin(s+d.a)*.08),Math.sin(a)*d.r*.6+.3);g.rotation.y=-Math.cos(a)*.5});
+coin.position.set(phone.position.x+.95*OS,phone.position.y-1.45,.5);coin.rotation.y=RM?0:s*.9;sh.position.x=phone.position.x;sh.position.y=phone.position.y-2.2;R.render(S,C)}
 requestAnimationFrame(loop);
 })();
 </script>
